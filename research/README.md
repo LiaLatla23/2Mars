@@ -28,7 +28,6 @@ Our research is organized into the following areas:
 |---|---|
 | `source-inventory.md` | General inventory of research sources. |
 | `nasa-resources.md` | Official NASA and JPL resources. |
-| `scientific-papers.md` | Scientific papers and technical documents. |
 | `image-catalog.md` | Visual and multimedia resource catalog. |
 | `bibliography.md` | Consolidated references. |
 

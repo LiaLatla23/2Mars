@@ -44,11 +44,10 @@ ToMars seeks to bridge the gap between complex space mission concepts and access
 
 Developed by Team SpaceNuts.
 
-## 📄 License
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](License.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
 ---
 

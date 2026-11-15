@@ -1,7 +1,7 @@
 # Auditoría de recursos, NASA y atribución · 2Mars V4
 
 Equipo SpaceNuts · NASA Space Apps Challenge 2026 · *Space Mission Design Game*.
-Auditoría hecha el **15 de noviembre de 2026** sobre el proyecto que se entrega (`V4-2Mars/`).
+Auditoría inicial hecha el **15 de noviembre de 2026** sobre V4. **Actualización documental:** se incorporó la confirmación posterior del equipo sobre las herramientas de producción y el playtesting; esta actualización no implica que se hayan vuelto a inspeccionar los archivos binarios.
 
 Estados usados: **Integrado** (está dentro del juego) · **Consultado** (se leyó y respalda un texto o una regla) · **Previsto** (aparece en planes; no está en el juego) · **No verificado** (no se pudo comprobar en esta sesión).
 «Verificado hoy» significa que la fuente se abrió o se buscó el 15-11-2026 y el dato coincide. Lo que no se pudo abrir desde esta sesión se dice así; no se da por bueno.
@@ -12,9 +12,9 @@ Estados usados: **Integrado** (está dentro del juego) · **Consultado** (se ley
 
 | # | Asunto | Por qué importa | Acción concreta |
 |---|---|---|---|
-| 1 | **Procedencia de la hoja de iconos** (`codex-clipboard-5b1489b8-….png`, de la que se recortaron 61 iconos y se compusieron 10 medallas) | La guía oficial exige marca de agua visible en imágenes generadas con SI. Los archivos no traen metadatos de origen. | El equipo confirma si la hoja se generó con IA. Si sí: ejecutar `python3 tools/mark_si_icons.py` (estampa «SI» visible en cada icono) y declararlo en el formulario. Si la dibujó una persona: anotar el autor en Créditos. |
-| 2 | **Procedencia del logotipo** `assets/brand/logo_2mars.png` y de la pegatina `Pegatina cósmica 2MARS con rover.png` | Igual que el punto 1. V3 lo declara «del equipo», sin más detalle. | Confirmar autor y método. Si se generó con IA, añadir marca visible o sustituirlo. |
-| 3 | **Procedencia del vídeo** `Stylized-low-poly-3D-animation-with-flat.mp4` (ahora `assets/video/launch.ogv`) | Sin metadatos de origen (solo `encoder=Lavf58.76.100`). Su nombre **no coincide** con el texto de los guiones de `CINEMATICS_HIGGSFIELD.md` («Stylized flat vector animation, low-poly look…»). | Se integró con la marca visible «SI-generated video · vídeo generado con SI» grabada en la imagen (opción prudente). Si el equipo confirma que no es generado, regenerar sin marca con el comando de `CINEMATICS_HIGGSFIELD.md`. |
+| 1 | **Hoja de iconos e imágenes de interfaz** (`assets/icons/`) | El equipo confirma que los visuales del juego se generaron con Claude, a partir de referencias de estilo y dirección visual preparadas en Canva. La guía de SI exige la identificación visible correspondiente en imágenes generadas. | La procedencia ya está confirmada; revisar la hoja original y cada exportación para comprobar que la marca «SI» sea visible donde corresponde. Declarar Claude y Canva en el formulario. |
+| 2 | **Logotipos SpaceNuts y 2Mars** (`assets/brand/logo_2mars.png` y archivos de identidad) | El equipo confirma que ambos logotipos se generaron con ChatGPT. | La procedencia está confirmada; revisar los archivos finales para verificar la identificación visible de generación SI exigida por las reglas del evento y declararlo en el formulario. |
+| 3 | **Animación de despegue y animaciones del rover** (`assets/video/launch.ogv` y animaciones integradas) | El equipo confirma que Higgsfield se utilizó para la animación de despegue y otras animaciones del rover. La inspección binaria original no permitió verificar metadatos de procedencia. | La herramienta ya está confirmada por el equipo; conservar la atribución y comprobar que los clips generados tengan la identificación visible SI exigida. |
 | 4 | **Efectos de sonido heredados de V3** (`good, bad, data, link, done, bump, warn, launch`) | V3 los declara «sintetizados para el juego», pero el programa que los generó no venía en el ZIP. | Aceptar la declaración de V3 o regenerarlos con `tools/make_audio.py`. |
 | 5 | **Páginas de la NASA no reabiertas en V4** (Science Objectives, Science Instruments, Rover Components, Mars Rock Samples, Landing Press Kit, First Sample Attempt) | Desde esta sesión `science.nasa.gov` no se pudo abrir. Sus datos vienen del Prompt Maestro y de la verificación de V3. | Abrir cada enlace y comprobar las cifras de la sección 4 antes de enviar. |
 | 6 | **Tasas de 800/3000 bps con antenas de 70 m** | Solo constan en arXiv 2211.14245 (artículo de revisión; no es una fuente de la NASA). | Ya no se muestran como dato de la NASA: el juego usa 160-500 bps (NASA Glenn). Solo inspiran el texto de la mejora «Tiempo de antena grande». |
@@ -79,9 +79,9 @@ La lista consolidada de las 11 fuentes NASA/JPL que aparecen en la biblioteca de
 | Python 3 con NumPy, SciPy y Pillow | PSF y comunidades | https://www.python.org | Síntesis de audio, recorte de iconos, composición de medallas | Usado para producir recursos | PSF / BSD / HPND | `tools/make_audio.py`, `tools/mark_si_icons.py` |
 | FFmpeg (libtheora, libvorbis) | Proyecto FFmpeg | https://ffmpeg.org | Conversión del vídeo a Ogg Theora y de la música a Ogg Vorbis | Usado para producir recursos | LGPL/GPL | Comandos en `HANDOFF.md` |
 | Xvfb y Mesa llvmpipe | X.Org / Mesa | https://www.mesa3d.org | Render por software para capturas y vídeo de demostración | Usado en pruebas | MIT | Capturas de `entrega/` |
-| Claude (Anthropic) | Anthropic | https://www.anthropic.com | Asistente de IA: escribió y revisó el código de V3 y V4 y esta documentación | Usado | — | `HANDOFF.md` de V3 y de V4 |
-| Higgsfield (conector) | Higgsfield | https://higgsfield.ai | Ninguna en V4. Conexión comprobada (plan «ultra», 10 créditos); **no se lanzó ninguna generación** | Disponible, no usado | — | Consulta de saldo del 15-11-2026 |
-| Codex | OpenAI | — | El relevo de V3 lo menciona como destinatario; no hay evidencia de su trabajo en los archivos | No verificado | — | `HANDOFF.md` de V3 |
+| Claude (Anthropic) | Anthropic | https://www.anthropic.com | Asistencia en programación, depuración e iteración; generación de visuales del juego siguiendo referencias de estilo y dirección visual preparadas en Canva | Usado (confirmación del equipo) | — | Declaración del equipo; referencias de estilo en Canva |
+| Higgsfield | Higgsfield | https://higgsfield.ai | Animación de despegue y otras animaciones del rover, según confirmación del equipo | Usado (confirmación del equipo) | — | Declaración del equipo; revisar los archivos finales para comprobar metadatos y marca SI |
+| OpenAI Codex | OpenAI | https://openai.com/codex/ | Asistencia en programación, depuración e iteración, confirmada por el equipo | Usado (confirmación del equipo) | — | Declaración del equipo; el historial de código no identifica por sí solo la contribución de cada herramienta |
 
 Hardware: no consta el de los equipos del grupo. Las pruebas de V4 corrieron en un contenedor Linux en la nube, sin GPU.
 
@@ -148,14 +148,14 @@ Simplificaciones que el juego declara donde corresponde (Biblioteca, taller, pan
 
 | Tipo | Qué hay | Cómo se sabe | Estado de la atribución |
 |---|---|---|---|
-| Código asistido por IA | Todo el GDScript de V3 y V4, las herramientas y estos documentos, con Claude (Anthropic) | Relevos de V3 y V4 | Declarado en Créditos del juego y en `SUBMISSION_RESOURCES.md` |
+| Código asistido por IA | Claude (Anthropic) y OpenAI Codex apoyaron programación, depuración e iteración | Confirmación del equipo; no se atribuye cada línea a una herramienta concreta | Declarado en `SUBMISSION_RESOURCES.md` |
 | Arte dibujado por código | Arte 2D de `art.gd`; geometría 3D; miniaturas renderizadas | Código fuente | No es imagen generada por un modelo; se declara como código asistido |
-| Imagen generada | **Sin confirmar**: hoja de iconos y logotipo | No hay metadatos; no se deduce por el aspecto | Pendientes 1 y 2 |
-| Vídeo generado | **Sin confirmar**: `launch.ogv` | Sin metadatos de origen | Marcado en pantalla de forma prudente (pendiente 3) |
+| Imagen generada | Logotipos generados con ChatGPT; visuales del juego generados con Claude a partir de referencias de Canva | Confirmación del equipo; metadatos binarios no re-inspeccionados | Verificar marca SI visible en los archivos finales |
+| Vídeo y animación | Higgsfield se utilizó para el despegue y otras animaciones del rover | Confirmación del equipo; metadatos binarios no re-inspeccionados | Verificar marca SI visible y créditos en los archivos finales |
 | Audio sintetizado por programa | Música y efectos nuevos de V4 | `tools/make_audio.py` reproduce los archivos | Descrito en Créditos y en los metadatos de la música |
 | Audio generado por un modelo | Ninguno | — | — |
 
-Atribuciones realmente presentes en el juego: Biblioteca → «Fuentes y créditos» (texto actualizado en V4), enlaces a cada fuente, y la marca del vídeo.
+Atribuciones en el juego y en el repositorio: Biblioteca → «Fuentes y créditos», enlaces a fuentes NASA/JPL, y créditos/documentación de producción. La confirmación de herramientas no sustituye la comprobación visual de las marcas SI en los archivos finales.
 
 ---
 

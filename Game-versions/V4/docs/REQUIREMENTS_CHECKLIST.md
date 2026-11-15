@@ -7,6 +7,8 @@
 Estado: **Hecho** = implementado y comprobado por el bot de pruebas o por captura revisada · **Parcial** = funciona, con el alcance que se indica · **Pendiente** = no implementado.
 "Bot" se refiere a `tests/bot.gd` (188 comprobaciones, en inglés y en español, con Godot 4.7 estable en modo headless a 60 fps fijos).
 
+> **Nota de estado actual:** las filas históricas de las secciones 1–30 describen principalmente V3 y se conservan como registro; no deben leerse como estado vigente de V4. La sección «Encargo V4» documenta la implementación V4. Desde la preparación de esta documentación, integrantes del equipo también jugaron manualmente partidas completas de 2Mars. Esto constituye playtesting interno; no equivale a una evaluación externa ni a una medición formal de resultados de aprendizaje.
+
 ## Secciones 1-26 del brief
 
 | § | Requisito | Dónde está | Evidencia | Estado |

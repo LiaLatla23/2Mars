@@ -1,0 +1,20 @@
+# Godot editor cache and imported artifacts
+.godot/
+.imported/
+
+# Local exports and temporary builds
+/export/
+/build/
+/dist/
+*.tmp
+*.bak
+*.log
+
+# Local user data and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local Godot user data should not be committed
+*.translation.tmp

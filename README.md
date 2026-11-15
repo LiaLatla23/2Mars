@@ -1,54 +1,72 @@
 # 2Mars 🚀
 
-**An educational Mars mission design game inspired by NASA's space exploration missions.**
+**Every decision shapes the mission.**
 
-ToMars is a 2D educational game developed for the [NASA Space Apps Challenge](https://www.spaceappschallenge.org/). Players take on the role of mission planners, guiding the ARES-01 rover through the Martian landscape of Jezero Crater to investigate the planet's geological history and search for evidence of ancient water.
+2Mars is an interactive Mars mission design and management game developed by Team SpaceNuts for the **NASA Space Apps Challenge 2026 — Space Mission Design Game**. Built with Godot Engine 4.7 and GDScript, it introduces players to the connected scientific and engineering decisions behind a robotic mission to Mars.
 
-The game combines scientific exploration, strategic decision-making, and resource management to introduce players to the challenges of designing and operating a space mission.
+Rather than focusing only on driving a rover, 2Mars follows a mission from planning and configuration through launch, interplanetary transit, landing, and surface operations. Players must consider how mission objectives, spacecraft and rover configuration, mass, power, communications, mobility, scientific instruments, and available resources affect what the mission can accomplish.
 
-## 🎯 Project Overview
+## Project at a glance
 
-ToMars aims to make space mission design more accessible and engaging through an interactive gaming experience.
+- **Genre:** Educational mission-design and management game
+- **Engine:** Godot Engine 4.7
+- **Language:** GDScript
+- **Platforms:** Browser-based web build
+- **Languages:** English and Spanish
+- **Modes:** Campaign and Sandbox
+- **Multiplayer:** Local two-player cooperative mode with complementary mission roles
+- **Primary exploration setting:** Jezero Crater, Mars
 
-Players must balance limited resources, analyze scientific data, and make decisions that affect the success of their mission.
+## How to play
 
-### Key Features
+Players take part in the work of a Mars mission team. They define scientific priorities, make planning decisions, configure a rover, and manage the consequences of those choices throughout the mission.
 
-- **Mars Exploration:** Explore a 2D representation of the Martian environment.
-- **Mission Planning:** Make strategic decisions based on mission objectives and constraints.
-- **Resource Management:** Manage power, time, data, communications, and budget.
-- **Scientific Investigation:** Use scientific instruments to investigate the Martian environment.
-- **Educational Gameplay:** Learn about planetary science and space mission design through interactive challenges.
+The experience includes:
 
-## 🪐 The Mission
+- **Mission planning:** Set objectives and consider mission constraints before launch.
+- **Spacecraft and rover configuration:** Select components and scientific instruments while balancing mass, budget, power, mobility, and mission capability.
+- **Launch and transit:** Progress through launch, cruise, communication events, and the simplified entry, descent, and landing sequence.
+- **Surface operations:** Explore Martian regions, investigate scientific targets, manage rover resources, collect and document samples, and review mission results.
+- **Campaign and Sandbox:** Follow a guided mission progression or experiment with mission configurations.
+- **Local cooperative play:** Two players take complementary roles—Mission Commander and Rover Engineer & Scientist—so they coordinate different responsibilities.
+- **Science Library:** Consult explanations, real mission examples, sources, and notes distinguishing NASA facts from game abstractions.
 
-The ARES-01 rover is deployed to Jezero Crater, a location of significant scientific interest due to its geological history.
+The game includes four campaign exploration areas, approximately 30 rover component options, and seven primary science-instrument choices. Gameplay systems simplify complex mission engineering for accessibility; they are not a professional mission-design tool or a high-fidelity orbital simulator.
 
-Its mission is to investigate the environment, collect scientific data, and search for evidence that could help explain Mars' ancient water history.
+## Scientific foundation
 
-Every decision matters. Players must carefully balance scientific objectives with the limitations of their mission.
+NASA and NASA/JPL mission documentation—especially material about the Mars 2020 Perseverance mission—informs the game's scientific objectives, instruments, rover systems, sample collection, mobility, power, communications, and mission stories.
 
-## 🛠️ Technologies
+These references are connected to gameplay decisions in the in-game Science Library and documented in the repository:
 
-- **Godot Engine 4**
-- **GDScript**
-- 2D Game Development
+- [NASA resources used in 2Mars](research/NASA_RESOURCES_USED.md)
+- [Scientific traceability: source to gameplay](Game-versions/V4/docs/SCIENCE_TRACEABILITY.md)
+- [V4 resource and attribution audit](Game-versions/V4/docs/RESOURCE_AUDIT.md)
+- [Research and resources index](research/README.md)
 
-## 🌎 NASA Space Apps Challenge
+**Important distinction:** the project uses NASA/JPL documentation as research references. The game does not directly load NASA planetary datasets or reproduce a complete real-world astrodynamics model. Numerical values, mission durations, resource limits, and some system behaviors are simplified game parameters unless explicitly identified and sourced as real mission facts.
 
-This project was developed as part of the NASA Space Apps Challenge, addressing the *Space Mission Design Game* challenge.
+## Technology and production
 
-ToMars seeks to bridge the gap between complex space mission concepts and accessible educational gameplay.
+- **Godot Engine 4.7** and **GDScript** — game engine and gameplay implementation.
+- **GitHub** — source control and project documentation.
+- **Vercel** — hosting for the exported browser build.
+- **Canva, Claude, ChatGPT, OpenAI Codex, Microsoft Copilot, and Higgsfield** — used in different parts of the team's visual development, coding assistance, research organization, and animation workflow. Specific contributions and attribution are documented in the project submission materials and V4 resource audit.
 
-## 👥 Team SpaceNuts
+## Team
 
-Developed by Team SpaceNuts.
+Developed by **Team SpaceNuts** for the NASA Space Apps Challenge 2026.
 
+## Repository structure
 
-## 📄 License
+- `Game-versions/` — game versions and their associated project files.
+- `research/` — scientific and technical research, references, and inventories.
+- `Game-versions/V4/docs/` — V4 scientific traceability and resource audit.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-*Explore Mars. Make decisions. Design your mission. ToMars.*
+*2Mars — Every decision shapes the mission.*

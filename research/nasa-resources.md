@@ -1,10 +1,10 @@
 # NASA Research & Technical References
 
-This document presents scientific and technical findings from NASA missions and resources that inform the development of **ToMars**.
+This document presents scientific and technical findings from NASA missions and resources that inform the development of **2Mars**.
 
 Unlike the source inventory, which records where information was found, this document focuses on the information itself: how Mars rovers work, what they investigate, which technologies they use, and how mission engineering influences exploration.
 
-The Mars 2020 Perseverance mission serves as a primary reference because it demonstrates the operation of a robotic rover on the Martian surface.
+The Mars 2020 Perseverance mission serves as a primary reference because it demonstrates the operation of a robotic rover on the Martian surface. This file is background research; for the audited list of sources actually listed in the V4 game and their specific contributions, see [NASA_RESOURCES_USED.md](NASA_RESOURCES_USED.md).
 
 ---
 
@@ -18,7 +18,7 @@ The Perseverance rover landed in Jezero Crater on February 18, 2021.
 
 Jezero Crater was selected because geological evidence indicates that it once contained a lake and an ancient river delta. These environments make it an important location for studying Mars' geological history and investigating whether conditions could once have supported microbial life.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 Perseverance provides a real-world example of a robotic surface exploration mission. Its objectives and operations can inform the game's mission structure, exploration activities, scientific investigations, and sample collection mechanics.
 
@@ -44,7 +44,7 @@ Collect, document, and store scientifically valuable samples of Martian rock and
 
 Test technologies and study environmental conditions that could be relevant to future human missions, including oxygen production, atmospheric dust, weather, and landing technologies.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 These objectives provide a foundation for the game's four exploration areas. Each area can introduce different scientific tasks and require the player to use the rover's systems and instruments for specific purposes.
 
@@ -69,7 +69,7 @@ The rover's architecture combines several interconnected subsystems:
 - Robotic arm and sample handling.
 - Communication systems.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 The rover customization system can introduce these subsystems as separate engineering categories. Players can learn that a rover is an integrated system rather than a collection of independent components.
 
@@ -81,7 +81,7 @@ This suspension allows the rover to navigate uneven terrain while maintaining co
 
 Mobility is important because the rover must reach scientific targets without compromising its ability to continue operating.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 This system can inspire terrain navigation, obstacle avoidance, route planning, and mobility-related decisions.
 
@@ -103,7 +103,7 @@ The arm carries a turret equipped with scientific tools and instruments. It allo
 
 The arm functions as an extension of the rover's scientific capabilities.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 The robotic arm can inspire interactive scientific activities, such as positioning an instrument, examining a rock, and collecting a sample.
 
@@ -117,7 +117,7 @@ Its onboard computers manage rover functions, communicate with instruments, moni
 
 The rover also uses sensors to estimate its position and orientation, supporting navigation and safe movement.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 Computing and navigation can be represented through rover status indicators, operational decisions, and mission monitoring systems.
 
@@ -133,7 +133,7 @@ The rover also has rechargeable lithium-ion batteries that help supply energy wh
 
 This is different from relying on a conventional replaceable battery as the primary energy source.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 Energy management can be a central part of the mission design and operations stages.
 
@@ -147,7 +147,7 @@ Possible gameplay applications:
 
 **Gameplay simplification:**
 
-ToMars may use a simplified energy system with numerical capacity and consumption values. These values should be identified as game mechanics, not presented as exact Perseverance specifications.
+2Mars may use a simplified energy system with numerical capacity and consumption values. These values should be identified as game mechanics, not presented as exact Perseverance specifications.
 
 ---
 
@@ -161,7 +161,7 @@ Communication is essential because mission operators need information about the 
 
 Data collected by the rover must be stored and transmitted to be received by the mission team.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 Communication can become an operational resource in the game.
 
@@ -181,7 +181,7 @@ This can help players understand the difference between collecting scientific in
 
 Perseverance carries seven primary science instruments. Together, they investigate Martian geology, chemistry, atmosphere, environmental conditions, and potential biosignatures.
 
-| Instrument | Main function | Possible application in ToMars |
+| Instrument | Main function | Possible application in 2Mars |
 |---|---|---|
 | Mastcam-Z | Zoom cameras for imaging and geological observations. | Identify and inspect distant targets. |
 | SuperCam | Uses laser, imaging, and spectroscopic techniques to investigate materials. | Perform remote rock analysis. |
@@ -197,7 +197,7 @@ WATSON is a camera associated with the SHERLOC instrument. It is not counted as 
 
 MOXIE was a technology demonstration, not a complete life-support system.
 
-**Relevance to ToMars:**
+**Relevance to 2Mars:**
 
 Each instrument can provide a different type of scientific information. This makes instrument selection meaningful during mission design and encourages players to choose equipment according to their scientific objectives.
 
@@ -213,7 +213,7 @@ By examining their composition, structure, and context, scientists can reconstru
 
 Perseverance uses remote observations and contact science to investigate potential targets before selecting samples.
 
-**Application to ToMars:**
+**Application to 2Mars:**
 
 Players can investigate geological targets, compare observations, and decide which materials are worth collecting.
 
@@ -232,7 +232,7 @@ The sample collection process involves more than drilling:
 
 Sample context is important because scientists need to know where the material came from and what geological features surrounded it.
 
-**Application to ToMars:**
+**Application to 2Mars:**
 
 A sample should have scientific value beyond simply being an item collected by the player. Its location, geological context, and observations should contribute to the mission's scientific record.
 
@@ -242,7 +242,7 @@ Sample integrity is important in planetary science.
 
 Materials brought from Earth or introduced during sampling could affect scientific investigations. Perseverance's sample system was designed with contamination control in mind.
 
-**Application to ToMars:**
+**Application to 2Mars:**
 
 The game can introduce sample-handling procedures and reward careful documentation and correct scientific practices.
 
@@ -265,7 +265,7 @@ Examples of engineering considerations include:
 | Mobility | Rover configuration and terrain influence exploration capabilities. |
 | Storage | Scientific observations and engineering data require onboard storage. |
 
-**Application to ToMars:**
+**Application to 2Mars:**
 
 The mission design stage can ask players to balance these factors before operating their rover.
 
@@ -275,7 +275,7 @@ The goal is not to create one universally perfect configuration, but to encourag
 
 ## 8. Translating NASA Research into Gameplay
 
-The following table summarizes how real mission concepts can inform ToMars.
+The following table summarizes how real mission concepts can inform 2Mars.
 
 | NASA reference | Scientific or engineering concept | Potential gameplay implementation |
 |---|---|---|
@@ -290,7 +290,7 @@ The following table summarizes how real mission concepts can inform ToMars.
 
 **Scientific accuracy principle:**
 
-ToMars is an educational game inspired by real planetary exploration missions. Its gameplay systems may simplify complex engineering processes to make them understandable and interactive.
+2Mars is an educational game inspired by real planetary exploration missions. Its gameplay systems may simplify complex engineering processes to make them understandable and interactive.
 
 Whenever numerical values or behaviors are simplified, they should be clearly distinguished from real NASA specifications.
 
@@ -309,4 +309,13 @@ The following official resources support the research summarized in this documen
 
 ---
 
-*ToMars | SpaceNuts Team | NASA Space Apps Challenge 2026*
+*2Mars | SpaceNuts Team | NASA Space Apps Challenge 2026*
+
+
+## 10. Scope and implementation status
+
+This document explains scientific and engineering concepts researched for 2Mars. It should not be read as proof that every concept described here is implemented as a game mechanic or that NASA datasets are loaded by the game.
+
+For the source-by-source implementation audit, consult [NASA_RESOURCES_USED.md](NASA_RESOURCES_USED.md) and [V4 Resource Audit](../Game-versions/V4/docs/RESOURCE_AUDIT.md). In particular, the reviewed V4 build does not load NASA planetary datasets, NASA maps, or raw rover photographs as game assets. Its NASA connection is primarily through cited mission documentation, in-game facts, mission stories, and science-informed gameplay abstractions.
+
+*2Mars | Team SpaceNuts | NASA Space Apps Challenge 2026*

@@ -48,6 +48,8 @@ Estados usados: **Integrado** (está dentro del juego) · **Consultado** (se ley
 
 ## 3. Inventario verificable
 
+La lista consolidada de las 11 fuentes NASA/JPL que aparecen en la biblioteca del juego, las fuentes adicionales de planificación y las limitaciones de integración está en [NASA_RESOURCES_USED.md](../../../research/NASA_RESOURCES_USED.md). Esta auditoría conserva la evidencia detallada de V4.
+
 ### 3.1 Recursos científicos
 
 | Nombre exacto | Organización | URL pública | Tipo | Contribución concreta | Dónde se usa | Estado | Licencia / atribución | Evidencia |

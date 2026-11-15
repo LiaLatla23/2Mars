@@ -1,6 +1,6 @@
 # 2Mars and the NASA Space Apps judging criteria
 
-Evidence-based notes for the team's submission. No scores are claimed here: judges assign them.
+Repository-side evidence notes that complement the official NASA Space Apps Project Submission; this file is not a duplicate submission or a score prediction. No scores are claimed here: judges assign them.
 Developed in several sessions during November 14 and 15.
 
 ## Impact
@@ -27,7 +27,7 @@ Developed in several sessions during November 14 and 15.
 ## Presentation
 - The submission needs a 30-second video or a 7-slide deck, in English or with English subtitles, and every external resource listed in the References field. Check the current rules on the Space Apps site before submitting.
 - The game's flow gives the demo its story: brief → design → readiness → launch → landing → science → transmit → debrief.
-- **Correct before recording:** the video scripts say the game uses open NASA data "from Curiosity and InSight". The game cites Mars 2020 Perseverance sources; Curiosity appears only in an optional story.
+- **Messaging consistency check:** do not describe the game as using open NASA datasets from Curiosity and InSight. The reviewed V4 Science Library cites Mars 2020 Perseverance sources; Curiosity appears only in an optional story, and no direct Curiosity or InSight datasets are loaded.
 
 ## References to list in the submission
 Mars 2020 Perseverance pages (Science Objectives, Science Instruments, Rover Components, Mars Rock Samples); NASA "Assessing Perseverance's First Sample Attempt"; NASA Glenn "Mars Perseverance Communications" (NTRS 20210010148); NASA/JPL Mars 2020 Landing Press Kit; Godot Engine; Fredoka and Nunito fonts (SIL OFL). Add any AI tools the team used, as the rules require.

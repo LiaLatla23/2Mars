@@ -3,7 +3,7 @@
 Para el equipo SpaceNuts. V4 continúa V3 sin rehacerla. Este documento es una **fotografía del estado de desarrollo del 15 de noviembre de 2026**, no un panel de estado actualizado automáticamente.
 El relevo de V3 se conserva en `HANDOFF_V3.md`.
 
-**Actualización posterior:** el repositorio se publicó en GitHub (`Savamg/2Mars`) y la página del proyecto está configurada en el dominio `2mars.com`. La frase «Nada se subió a GitHub, se publicó ni se desplegó» describía únicamente el momento original de redacción de esta nota.
+**Actualización posterior:** el repositorio se publicó en GitHub (`Savamg/2Mars`) y la versión web actual está desplegada en `https://2mars.vercel.app/`. La frase «Nada se subió a GitHub, se publicó ni se desplegó» describía únicamente el momento original de redacción de esta nota.
 
 ## Cómo abrirlo y probarlo
 

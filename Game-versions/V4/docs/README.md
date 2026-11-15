@@ -13,6 +13,18 @@ This folder contains the technical notes, evidence and attribution records for t
 | [Resource audit](RESOURCE_AUDIT.md) | Reviews media, attribution, scientific claims and project resources. |
 | [Submission resources](SUBMISSION_RESOURCES.md) | Reference list and working material for the NASA Space Apps submission. Verify form fields and outstanding attribution items before submitting. |
 
+## Project evidence
+
+The [repository evidence index](../../../evidence/README.md) brings together:
+
+- [Challenge alignment](../../../evidence/CHALLENGE_ALIGNMENT.md)
+- [Educational design](../../../evidence/EDUCATIONAL_DESIGN.md)
+- [Mission walkthrough](../../../evidence/MISSION_CASE_STUDY.md)
+- [Test report](../../../evidence/TEST_REPORT.md)
+- [AI and asset attribution](../../../evidence/AI_AND_ASSET_ATTRIBUTION.md)
+
+These materials support inspection of the implementation. They are not a second copy of the official Space Apps Project Submission.
+
 ## Development and media
 
 | Document | Purpose |
@@ -25,7 +37,7 @@ This folder contains the technical notes, evidence and attribution records for t
 
 - **For players:** start with the [V4 game guide](../README.md).
 - **For developers:** read the game guide, then the development handoff and requirements checklist.
-- **For judges and reviewers:** start with the [root README](../../../README.md), then read the science traceability and resource audit.
+- **For reviewers:** start with the [root README](../../../README.md), then use the [evidence index](../../../evidence/README.md), science traceability and resource audit.
 - **For source verification:** use the NASA resource inventory and follow the original NASA/JPL links.
 
 ## Evidence and limitations

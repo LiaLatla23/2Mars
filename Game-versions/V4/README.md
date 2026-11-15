@@ -10,7 +10,8 @@
   <a href="https://2mars.vercel.app">Play online</a> ·
   <a href="../../README.md">Repository home</a> ·
   <a href="docs/README.md">Documentation</a> ·
-  <a href="docs/SCIENCE_TRACEABILITY.md">Science traceability</a>
+  <a href="docs/SCIENCE_TRACEABILITY.md">Science traceability</a> ·
+  <a href="../../evidence/README.md">Project evidence</a>
 </p>
 
 ---
@@ -159,6 +160,10 @@ The Science Library distinguishes:
 Examples of deliberate simplifications include the game's 300 W RTG parameter compared with Perseverance's approximately 110 W MMRTG output at mission start, accelerated communications and time, and simplified landing and mission-planning models.
 
 Read the [NASA resource inventory](../../research/NASA_RESOURCES_USED.md) and [V4 science traceability](docs/SCIENCE_TRACEABILITY.md) for the full source mapping.
+
+## Project evidence
+
+The repository's [evidence index](../../evidence/README.md) contains the challenge alignment, educational design, mission walkthrough, test report and AI/asset attribution record. These documents complement—not duplicate—the official Space Apps Project Submission.
 
 ## Documentation
 

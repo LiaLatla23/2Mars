@@ -1,4 +1,4 @@
-# ToMars 🚀
+# 2Mars 🚀
 
 **An educational Mars mission design game inspired by NASA's space exploration missions.**
 

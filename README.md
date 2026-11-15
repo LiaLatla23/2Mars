@@ -25,17 +25,15 @@
 
 **[Play the web version →](https://2mars.vercel.app)**
 
-<p align="center">
-  ```mermaid
+```mermaid
 flowchart LR
-    A["01 · PLAN<br/>Objectives & constraints"] --> B["02 · DESIGN<br/>Build your rover"]
-    B --> C["03 · LAUNCH<br/>Travel to Mars"]
-    C --> D["04 · EXPLORE<br/>Investigate & collect"]
-    D --> E["05 · LEARN<br/>Review mission results"]
+    A["01 · PLAN: Objectives and constraints"] --> B["02 · DESIGN: Build your rover"]
+    B --> C["03 · LAUNCH: Travel to Mars"]
+    C --> D["04 · EXPLORE: Investigate and collect"]
+    D --> E["05 · LEARN: Review mission results"]
     classDef stage fill:#26384b,stroke:#d77c58,color:#ffffff,stroke-width:2px
     class A,B,C,D,E stage
 ```
-</p>
 
 ## A look inside the rover workshop
 

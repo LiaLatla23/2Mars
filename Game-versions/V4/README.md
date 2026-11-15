@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/logo_2mars.png" alt="2Mars logo" width="190">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/brand/logo_2mars.png" alt="2Mars logo" width="190">
 </p>
 
 <h1 align="center">2Mars · V4</h1>
@@ -21,7 +21,19 @@ V4 is the current version of 2Mars. It is an educational mission-design and mana
 
 Players plan a Mars mission, configure a rover, launch, travel to Mars, complete a simplified landing sequence, and conduct scientific operations. Mission planning and engineering choices affect the resources, instruments, risks and science results available later.
 
-### What's included
+### In-game component artwork
+
+The following images are the actual component sprites used by the V4 rover workshop, not external concept art:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/rocker.png" alt="Rocker-bogie suspension" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/wheels_std.png" alt="Standard rover wheels" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/rtg.png" alt="Radioisotope power system" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/mastcam.png" alt="Mastcam instrument" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/drill.png" alt="Sample drill" width="110">
+</p>
+
+## What's included
 
 - **Campaign and Sandbox** modes.
 - **Local two-player co-op** with complementary roles: Mission Commander and Rover Engineer & Scientist.

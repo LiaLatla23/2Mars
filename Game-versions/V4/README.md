@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://2mars.com">Play online</a> ·
-  <a href="../../../README.md">Repository home</a> ·
+  <a href="../../README.md">Repository home</a> ·
   <a href="docs/README.md">Documentation</a> ·
   <a href="docs/SCIENCE_TRACEABILITY.md">Science traceability</a>
 </p>

@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://2mars.com"><img src="https://img.shields.io/badge/PLAY-2mars.com-c65b3d?style=for-the-badge" alt="Play 2Mars"></a>
+  <a href="https://2mars.vercel.app"><img src="https://img.shields.io/badge/PLAY-2mars.vercel.app-c65b3d?style=for-the-badge" alt="Play 2Mars"></a>
   <a href="https://github.com/Savamg/2Mars"><img src="https://img.shields.io/badge/GitHub-Source%20Code-24292f?style=for-the-badge&logo=github" alt="Source code"></a>
   <a href="https://godotengine.org"><img src="https://img.shields.io/badge/Engine-Godot%204.7-478cbf?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot 4.7"></a>
   <img src="https://img.shields.io/badge/Language-English%20%7C%20Espa%C3%B1ol-6b8e75?style=for-the-badge" alt="Bilingual">
@@ -23,7 +23,7 @@
 
 2Mars puts players in the role of a Mars mission team. Plan an expedition, make engineering trade-offs, configure a rover, launch it, and manage scientific operations on the Martian surface. Every choice has consequences for what the mission can achieve.
 
-**[Play the web version →](https://2mars.com)**
+**[Play the web version →](https://2mars.vercel.app)**
 
 <p align="center">
   <img src="assets/mission-flow.svg" alt="2Mars mission flow: Plan, Design, Launch, Explore, and Learn" width="100%">
@@ -45,7 +45,7 @@
 
 ### Play online
 
-Open **[2mars.com](https://2mars.com)** in a modern desktop browser.
+Open **[2mars.vercel.app](https://2mars.vercel.app)** in a modern desktop browser.
 
 ### Run the project locally
 

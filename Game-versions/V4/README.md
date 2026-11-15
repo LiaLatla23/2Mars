@@ -7,7 +7,7 @@
 <p align="center">Current playable version · Godot 4.7 · English / Español</p>
 
 <p align="center">
-  <a href="https://2mars.com">Play online</a> ·
+  <a href="https://2mars.vercel.app">Play online</a> ·
   <a href="../../README.md">Repository home</a> ·
   <a href="docs/README.md">Documentation</a> ·
   <a href="docs/SCIENCE_TRACEABILITY.md">Science traceability</a>
@@ -39,7 +39,7 @@ Players plan a Mars mission, configure a rover, launch, travel to Mars, complete
 
 ### Online
 
-Visit **[2mars.com](https://2mars.com)**.
+Visit **[2mars.vercel.app](https://2mars.vercel.app)**.
 
 ### Run with Godot
 

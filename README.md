@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Game-versions/V4/assets/brand/logo_2mars.png" alt="2Mars logo" width="230">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/brand/logo_2mars.png" alt="2Mars logo" width="230">
 </p>
 
 <h1 align="center">2Mars</h1>
@@ -26,7 +26,18 @@
 **[Play the web version →](https://2mars.vercel.app)**
 
 <p align="center">
-  <img src="assets/mission-flow.svg" alt="2Mars mission flow: Plan, Design, Launch, Explore, and Learn" width="100%">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/assets/mission-flow.svg" alt="2Mars mission flow: Plan, Design, Launch, Explore, and Learn" width="100%">
+</p>
+
+## A look inside the rover workshop
+
+These are original in-game component assets from V4:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/rocker.png" alt="Rover rocker-bogie suspension component" width="120">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/drill.png" alt="Rover sampling drill component" width="120">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/solar.png" alt="Rover solar power component" width="120">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/supercam.png" alt="SuperCam science instrument component" width="120">
 </p>
 
 ## Explore 2Mars

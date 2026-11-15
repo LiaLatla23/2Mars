@@ -26,7 +26,7 @@
 **[Play the web version →](https://2mars.vercel.app)**
 
 <p align="center">
-  <img src="https://github.com/Savamg/2Mars/raw/main/assets/mission-flow.svg" alt="2Mars mission flow: Plan, Design, Launch, Explore, and Learn" width="100%">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/assets/mission-flow.svg" alt="2Mars mission flow: Plan, Design, Launch, Explore, and Learn" width="100%">
 </p>
 
 ## A look inside the rover workshop

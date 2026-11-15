@@ -58,6 +58,17 @@ These are original in-game component assets from V4:
 - **Science Library:** NASA/JPL references, real mission examples, and clear distinctions between facts and game abstractions.
 - **Mission scope:** four campaign exploration areas, around 30 rover component options, and seven primary science instruments.
 
+## Project evidence and documentation
+
+The official NASA Space Apps Project Submission is the project's public-facing entry. This repository complements it with implementation evidence, technical detail and transparent documentation rather than duplicating the submission.
+
+- [Challenge alignment](evidence/CHALLENGE_ALIGNMENT.md) — where mission-design activities appear in the implemented game.
+- [Educational design](evidence/EDUCATIONAL_DESIGN.md) — intended learning opportunities and their gameplay activities.
+- [Mission walkthrough](evidence/MISSION_CASE_STUDY.md) — a reproducible route for inspecting a complete mission.
+- [Test report](evidence/TEST_REPORT.md) — automated test instructions, coverage and evidence limits.
+- [AI and asset attribution](evidence/AI_AND_ASSET_ATTRIBUTION.md) — team-confirmed tools and attribution checks.
+- [Evidence index](evidence/README.md) — all supporting documentation in one place.
+
 ## Quick start
 
 ### Play online

@@ -1,33 +1,41 @@
-# 2Mars and the NASA Space Apps judging criteria
+# 2Mars · challenge and judging alignment
 
-Evidence-based notes for the team's submission. No scores are claimed here: judges assign them.
-Developed in several sessions during November 14 and 15.
+This evidence note explains how the current V5.1 project relates to the NASA Space Apps Challenge **Space Mission Design Game** challenge and its broad judging dimensions. It does not assign scores, claim official weights or predict a judging result.
 
 ## Impact
-- **Problem addressed:** mission design is usually taught as facts. 2Mars lets a 15-year-old feel why a rover cannot carry everything.
-- **Evidence in the build:** a first-time tutorial that completes on real actions; English and Spanish; mouse-only, keyboard-only or both; reduced-motion option; local co-op for classrooms with one computer.
-- **Not yet shown:** nobody outside the team has played this version. A short play session with real students would be the strongest impact evidence.
+
+- 2Mars makes mission-planning and rover-engineering trade-offs interactive rather than presenting them only as facts.
+- The game includes English and Spanish and supports individual and local cooperative play.
+- Its intended educational value is documented in [Educational design](../../../evidence/EDUCATIONAL_DESIGN.md).
+- The repository documents internal team playtesting, not external classroom research or measured learning gains.
 
 ## Creativity
-- One loop that joins **mission design, rover operations and planetary science**: the rover you build is the rover you drive, and the debrief traces the result back to the design.
-- The "failed sample" event turns a real setback (Perseverance's first coring attempt, 2021) into a lesson instead of a penalty.
-- Interpretation questions reward the right level of certainty, not the most exciting answer.
+
+- The rover configured by the player is used during Mars operations, connecting engineering decisions with later gameplay.
+- Planning, rover design, readiness, launch/transit, surface science and debrief form one connected mission loop.
+- V5.1 Expedition mode adds two independently operated rovers to one shared mission using split-screen play.
+- Science stories and sample events turn real mission context into interactive learning moments.
 
 ## Validity
-- Runs in Godot 4.7 with no plugins. 188 automated checks pass in English and Spanish, played under the normal rules by a bot.
-- Power in W, stored energy in Wh and data in MB are kept consistent; generation and consumption are never mixed.
-- Real NASA facts are shown apart from game values, each with its source. Game values are labelled as a model.
-- **Limits:** balance was tuned with a bot, not with players. The landing is a simplified model. Controller input is mapped but untested.
+
+- The Science Library distinguishes sourced NASA/JPL information from fictional story content and simplified game parameters.
+- The source includes a 30-component engineering catalogue and explicit game-model values.
+- Automated test scenes cover compilation, game flow and layout; see the [test report](../../../evidence/TEST_REPORT.md) for execution status.
+- The game is not a validated engineering simulator. Orbital mechanics, landing and multiple resource/time values are simplified.
 
 ## Relevance
-- Challenge: Space Mission Design Game. The player defines objectives, plans, designs, launches, operates and evaluates a mission.
-- NASA information drives mechanics, not decoration: the four science objectives are the four zones; instrument capabilities decide which evidence is reachable; relay and direct link rates explain why data must wait for an orbiter; the sample catalogue shapes how samples are documented.
-- The in-game library has a "NASA → game" tab with the chain source → information → mechanic → decision → consequence.
+
+The player experiences core mission-design activities: defining goals, selecting a mission profile, choosing a landing area and science priorities, configuring a rover, assessing readiness, launching, exploring, communicating and evaluating results.
+
+The [challenge alignment map](../../../evidence/CHALLENGE_ALIGNMENT.md) identifies the corresponding V5 source files.
 
 ## Presentation
-- The submission needs a 30-second video or a 7-slide deck, in English or with English subtitles, and every external resource listed in the References field. Check the current rules on the Space Apps site before submitting.
-- The game's flow gives the demo its story: brief → design → readiness → launch → landing → science → transmit → debrief.
-- **Correct before recording:** the video scripts say the game uses open NASA data "from Curiosity and InSight". The game cites Mars 2020 Perseverance sources; Curiosity appears only in an optional story.
 
-## References to list in the submission
-Mars 2020 Perseverance pages (Science Objectives, Science Instruments, Rover Components, Mars Rock Samples); NASA "Assessing Perseverance's First Sample Attempt"; NASA Glenn "Mars Perseverance Communications" (NTRS 20210010148); NASA/JPL Mars 2020 Landing Press Kit; Godot Engine; Fredoka and Nunito fonts (SIL OFL). Add any AI tools the team used, as the rules require.
+- The root README provides direct access to the web demo, V5 source, screenshots and supporting evidence.
+- The V5 game guide explains installation, game modes and controls.
+- The [mission walkthrough](../../../evidence/MISSION_CASE_STUDY.md) offers a consistent route for demonstrating the game.
+- The official Project Submission and its required media/links are separate from this repository.
+
+## References
+
+Use the V5 [resource audit](RESOURCE_AUDIT.md), [science traceability](SCIENCE_TRACEABILITY.md), and [NASA resource inventory](../../../research/NASA_RESOURCES_USED.md) to identify the sources relevant to implemented content. List external resources and AI tools in the official submission as required by the current event guidance.

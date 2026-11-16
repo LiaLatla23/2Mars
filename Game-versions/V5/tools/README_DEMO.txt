@@ -1,6 +1,31 @@
-Guion del vídeo de demostración (2Mars-V4-demo.mp4). Ejecutar dentro del proyecto, con pantalla:
+# V5 screenshot and demo capture utility
 
-godot --path . --fixed-fps 60 --write-movie demo.avi res://tools/Shots.tscn -- --es --progress --full --quality=2 --sound --wait=10 --steps="wait:60,move:640:420:20,move:1100:620:30,wait:20,go:hub,wait:50,move:520:300:20,down,move:700:320:40,move:420:300:50,up,wait:20,move:1120:178:20,wait:14,move:1120:248:14,wait:14,move:1120:320:14,wait:16,call:switch_base,wait:90,move:560:320:14,down,move:760:330:50,up,wait:30,go:design,wait:50,move:340:170:24,wait:40,move:570:170:20,wait:40,click,wait:50,call:open_category:mobility,wait:30,move:340:170:20,wait:40,move:570:170:20,wait:36,click,wait:50,call:open_category:science,wait:20,move:340:170:20,wait:40,move:570:300:20,wait:40,call:open_readiness,wait:110,go:upgrades,wait:40,move:200:250:20,click,wait:50,move:420:250:16,click,wait:60,go:progress,wait:50,move:130:250:20,click,wait:40,move:310:250:16,click,wait:40,call:open_category:tools,wait:30,move:310:250:16,click,wait:50,go:achievements,wait:40,move:300:300:20,click,wait:50,go:zones,wait:140,go:ops,wait:30,begin,wait:30,drive:150,drive:70:move_down,call:toggle_autonav,wait:240,call:study_nearest,wait:90,call:close_dialog,call:toggle_transmit,wait:150"
+The V5 project includes a scripted capture scene at `tools/Shots.tscn`. It opens the real game UI, drives selected screens and saves PNG captures. It uses a dedicated test save path and is intended for development evidence capture.
 
-Luego: ffmpeg -i demo.avi -c:v libx264 -crf 20 -pix_fmt yuv420p -c:a aac demo.mp4
-Se graba fotograma a fotograma: no mide la velocidad en tiempo real.
+Run from the `Game-versions/V5` directory:
+
+```bash
+godot --path . res://tools/Shots.tscn -- --screen=ops --out=user://shots --es --zone=life
+```
+
+Useful options:
+
+- `--screen=menu` or another screen name selects the starting screen.
+- `--out=PATH` sets the output directory.
+- `--es` selects Spanish.
+- `--zone=life` selects an exploration zone.
+- `--full` loads the scripted full rover configuration.
+- `--progress` adds sample progression and achievements for UI captures.
+- `--name=PREFIX` sets the output filename prefix.
+- `--wait=FRAMES` sets the initial wait before capture.
+- `--steps=shot,wait:30,shot` defines a comma-separated capture sequence.
+
+Example:
+
+```bash
+godot --path . res://tools/Shots.tscn -- --screen=ops --out=user://shots --es --full --progress --steps=shot,wait:60,shot
+```
+
+The script can also navigate screens, trigger methods and simulate input. See `shots.gd` for the supported step syntax.
+
+These screenshots document interface states; they are not a substitute for interactive testing or a formal usability study.

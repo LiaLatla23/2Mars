@@ -4,7 +4,8 @@
 <p align="center"><strong>Every decision shapes the mission.</strong></p>
 <p align="center">An educational Mars rover mission design and exploration game by Team SpaceNuts · Panama</p>
 <p align="center">
-<a href="https://2mars.vercel.app/"><img src="https://img.shields.io/badge/WEB%20DEMO-2mars.vercel.app-c65b3d?style=for-the-badge" alt="Web demo"></a>
+<a href="https://2mars.vercel.app/"><img src="https://img.shields.io/badge/PLAY%20ON-VERCEL-c65b3d?style=for-the-badge" alt="Play on Vercel"></a>
+<a href="https://lialatla23.itch.io/2mars"><img src="https://img.shields.io/badge/ALTERNATIVE-ITCH.IO-fa5c5c?style=for-the-badge&logo=itchdotio&logoColor=white" alt="Play on itch.io"></a>
 <a href="https://github.com/Savamg/2Mars"><img src="https://img.shields.io/badge/SOURCE-GitHub-24292f?style=for-the-badge&logo=github" alt="Source code"></a>
 <img src="https://img.shields.io/badge/CURRENT%20SOURCE-V5.1-478cbf?style=for-the-badge" alt="V5.1">
 <img src="https://img.shields.io/badge/GODOT-4.7-478cbf?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot 4.7">
@@ -15,13 +16,15 @@
 
 ## Your mission starts here
 
+**Play the game:** [Vercel — recommended](https://2mars.vercel.app/) · [itch.io — alternative](https://lialatla23.itch.io/2mars)
+
 **2Mars** turns the planning and operation of a Mars rover mission into an interactive experience. Players define scientific priorities, plan a mission, build a rover under engineering constraints, assess readiness, launch, explore the Martian surface, collect evidence and review the outcome.
 
 The rover you design is the rover you operate. Choices about mass, power, mobility, instruments, storage and communications shape what the mission can accomplish.
 
-**[Open the web demo](https://2mars.vercel.app/)** · **[Explore the V5.1 source project](Game-versions/V5/)**
+<badge color="success">Recommended</badge> **[Play 2Mars on Vercel](https://2mars.vercel.app/)**
 
-> **Build note:** V5.1 is the current source in this repository. The public web demo is a separate deployment and has not been independently verified as the V5.1 build; use the V5 source project above for the exact current version.
+Alternative access: [Play 2Mars on itch.io](https://lialatla23.itch.io/2mars) · [Explore the V5.1 source project](Game-versions/V5/)
 
 ## Gameplay at a glance
 

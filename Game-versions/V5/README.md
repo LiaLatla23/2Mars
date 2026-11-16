@@ -4,7 +4,7 @@
 
 **2Mars** is an educational Mars mission design and exploration game created by Team SpaceNuts for the **NASA Space Apps Challenge 2026 — Space Mission Design Game**.
 
-<badge color="success">Current source</badge> **Project version 5.1.0** · Godot 4.7 · GDScript
+**CURRENT SOURCE** **Project version 5.1.0** · Godot 4.7 · GDScript
 
 ## Overview
 

@@ -6,7 +6,8 @@ This document provides a concise reference inventory for the official NASA Space
 
 | Resource | Link |
 |---|---|
-| Public web demo | https://2mars.vercel.app/ |
+| Recommended playable version (Vercel) | https://2mars.vercel.app/ |
+| Alternative playable version (itch.io) | https://lialatla23.itch.io/2mars |
 | Source repository | https://github.com/Savamg/2Mars |
 | Current source project | https://github.com/Savamg/2Mars/tree/main/Game-versions/V5 |
 | Project screenshots | https://github.com/Savamg/2Mars/tree/main/screenshots |
@@ -15,7 +16,8 @@ This document provides a concise reference inventory for the official NASA Space
 
 - Godot Engine 4.7 and GDScript.
 - GitHub for source control and documentation.
-- Vercel for web deployment.
+- Vercel for the recommended public web deployment.
+- itch.io as an alternative public access point.
 - Python utility scripts and FFmpeg in the asset/media workflow.
 - Fredoka and Nunito fonts (SIL Open Font License).
 - Canva for visual references and art direction.

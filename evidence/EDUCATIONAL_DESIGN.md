@@ -1,44 +1,38 @@
-# Educational design · 2Mars V4
+# Educational design · 2Mars V5.1
 
 ## Purpose
 
-2Mars is designed to give players an interactive introduction to the interconnected decisions involved in planning and operating a Mars rover mission. Instead of presenting mission concepts only as facts, the game places them inside a sequence of choices, constraints, operations and outcomes.
+2Mars is designed to introduce players to the interconnected decisions involved in planning and operating a Mars rover mission. Mission concepts are placed inside a sequence of choices, constraints, operations and outcomes.
 
-The learning opportunities below describe the intended educational design. They are **not measured learning outcomes**. The team has conducted internal playtesting, but no formal external study with students or pre/post learning assessment is documented.
+The learning opportunities described here are part of the intended design. They are not measured learning outcomes or a claim of formal educational validation.
 
 ## Concepts and gameplay activities
 
 | Concept | Player activity | Intended understanding |
 |---|---|---|
-| Mission objectives | Select a mission profile, landing site and science priority. | A mission is designed around goals and constraints rather than a single isolated task. |
-| Mass and budget trade-offs | Select rover components within design limits. | Adding capability has costs; the rover cannot carry every possible system without trade-offs. |
-| Power and energy | Compare power systems and component consumption. | Power generation, stored energy and operational consumption are different quantities and affect what can be operated. |
-| Mobility and terrain | Choose chassis and wheel options, then drive on Mars. | Mobility hardware influences rover capability and operational risk. |
-| Scientific instruments | Select instruments and investigate targets. | Different instruments produce different kinds of evidence and are suited to different questions. |
-| Sampling and uncertainty | Attempt sample collection and interpret outcomes. | Scientific operations can fail or produce incomplete evidence; a setback may require a revised strategy. |
-| Data storage and communications | Store observations and decide when/how to transmit them. | Collecting data and returning data to Earth are separate steps constrained by storage and communication opportunities. |
-| Mission evaluation | Review progress, inventory and debrief. | Outcomes can be examined in relation to earlier design and operational decisions. |
-| Collaboration | Share a local two-player mission using complementary roles. | Complex missions benefit from coordination and division of responsibilities. |
+| Mission objectives | Review the briefing and select mission profile and science priorities. | A mission is designed around goals and constraints. |
+| Mission planning | Choose launch and landing scenarios and a mission profile. | Mission architecture involves trade-offs. |
+| Mass and budget | Select rover components within design limits. | Adding capability has costs; a rover cannot carry every possible system. |
+| Power and energy | Compare power systems and component consumption. | Power generation, stored energy and operational consumption are distinct. |
+| Mobility and terrain | Select mobility hardware and operate the rover on Mars. | Rover configuration influences mobility and operational risk. |
+| Scientific instruments | Select instruments and investigate targets. | Instruments produce different evidence and address different questions. |
+| Sampling and uncertainty | Attempt sample collection and interpret outcomes. | Scientific operations can fail or produce incomplete evidence; strategy may need to change. |
+| Data and communications | Store observations and decide when and how to transmit them. | Collecting information and returning data are separate steps. |
+| Mission evaluation | Review debrief, progress and inventory. | Outcomes can be considered in relation to earlier design and operational decisions. |
+| Collaboration | Coordinate roles or operate two rovers in local Expedition co-op. | Complex missions benefit from coordination and shared goals. |
 
 ## Learning design principles
 
-1. **Learn by making decisions:** concepts are encountered when a player must choose or operate something.
-2. **Show consequences:** mission constraints should affect later options and operations, rather than exist only as descriptive text.
-3. **Use evidence and uncertainty:** the Science Library distinguishes sourced mission facts from simplified game parameters and fictional content.
-4. **Support different access preferences:** the game provides English and Spanish, and its first-launch flow offers mouse, keyboard or combined input preferences.
-5. **Encourage collaboration:** local co-op gives two players complementary responsibilities on one computer.
+1. **Learn through decisions:** concepts appear when a player must choose or operate something.
+2. **Show consequences:** constraints influence later options and operations.
+3. **Make evidence visible:** the Science Library distinguishes sourced facts from simplified game parameters and fictional content.
+4. **Support access preferences:** the game offers English and Spanish and supports keyboard/mouse interaction.
+5. **Encourage collaboration:** local co-op gives players complementary responsibilities and shared mission goals.
 
-## How the scientific content is grounded
+## Scientific grounding
 
-The V4 Science Library references NASA/JPL material about Perseverance's science objectives, instruments, rover components, samples, communications and mission events. Six explicit NASA → Game trace entries connect selected sources to game mechanics and player decisions. See:
+The V5 Science Library references NASA/JPL material about Perseverance's science objectives, instruments, rover components, samples, communications and mission events. The [science traceability matrix](../Game-versions/V5/docs/SCIENCE_TRACEABILITY.md) connects selected sources to information and gameplay.
 
-- [NASA resources used](../research/NASA_RESOURCES_USED.md)
-- [Science traceability matrix](../Game-versions/V4/docs/SCIENCE_TRACEABILITY.md)
+## Evaluation status
 
-## Evaluation status and next validation step
-
-**What is documented:** the team manually played complete game sessions, and V4 includes an automated bot that exercises the actual game flow and contains checks for engineering data, mission progression, language and co-op systems.
-
-**What is not documented:** external classroom testing, a measured improvement in science knowledge, a controlled comparison with another learning method, or a statistically supported educational impact.
-
-A useful next study would invite students or educators who are not part of the development team to complete a guided mission, collect structured usability feedback, and use a short pre/post questionnaire on selected concepts. Results should be reported only after the study is actually conducted.
+The repository documents internal team playtesting and includes automated test scenes. It does not document an external classroom study, controlled comparison, pre/post learning assessment or statistically supported educational impact. The game is designed to support learning; it is not claimed to have proven learning gains.

@@ -1,32 +1,36 @@
-# 2Mars V5.1 — relevo breve (15-11-2026)
+# V5.1 release notes
 
-Continúa V5. Nada publicado ni desplegado.
+**Project:** 2Mars  
+**Project version:** 5.1.0  
+**Engine:** Godot 4.7  
+**Team:** SpaceNuts
 
-## Cambios de esta entrega
-- **Cooperativo Expedición**: dos rovers en la misma misión, pantalla dividida fija (izquierda J1, derecha J2). Posición, velocidad, energía, salud y tubos son de cada rover; reloj, memoria, datos, objetivos y recompensas son de la misión y existen una vez. Si un rover queda inutilizado el otro sigue; con los dos inutilizados, informe de fracaso.
-- Logo original de SpaceNuts en Créditos.
-- Se conservan: arreglo del `%` en `Data.recommendations()`, guardado seguro, Tripulación, subniveles, peligros arcade.
+## Expedition cooperative mode
 
-## Controles de Expedición
-| | J1 | J2 |
+V5.1 includes a local Expedition mode with two rovers operating in one shared mission through a fixed split-screen layout.
+
+- Player 1 controls the left rover with W, A, S and D.
+- Player 2 controls the right rover with the arrow keys.
+- Each rover has its own position, speed, energy, health and sample tubes.
+- Mission time, memory, collected data, objectives and rewards are shared.
+- If one rover is disabled, the other can continue; if both are disabled, the mission reports failure.
+
+### Controls
+
+| Action | Player 1 | Player 2 |
 |---|---|---|
-| Mover | W A S D | Flechas |
-| Estudiar / siguiente opción del panel | E | Punto `.` |
-| Acción (elegir opción, minijuego) | Espacio | Intro |
-| Transmitir | T | Coma `,` |
-| Pausa | Esc | Esc |
+| Move | W A S D | Arrow keys |
+| Study / cycle panel option | E | Period (.) |
+| Confirm action / minigame | Space | Enter |
+| Transmit | T | Comma (,) |
+| Pause | Esc | Esc |
 
-En el panel de roca, el punto (o E) recorre las opciones y la acción la ejecuta; los números 1-6 también valen.
+In the rock-study panel, E or . cycles through available options; Space or Enter performs the selected action. Number keys 1–6 can also select options.
 
-## Límites conocidos de Expedición
-- Un solo panel de estudio o minijuego a la vez (el otro jugador sigue conduciendo mientras tanto).
-- El HUD de recursos de arriba a la izquierda muestra el rover que interactuó por último; cada jugador tiene su barra propia de energía y salud.
-- Remolinos, tormenta y peligros arcade afectan solo al rover en foco.
-- Sin fusión de cámaras (pantalla dividida fija), sin mando, teclas no reasignables.
-- Las marcas 2D del terreno (anillos de roca, flecha guía) solo salen en la vista izquierda.
+## Mission-state design
 
-## Pendiente
-Intro cinemática, voz de Owen (cancelada), fusión de cámaras, build web probada, medición en GPU, prueba con personas, procedencia de iconos/logo 2MARS/vídeo.
+Rover-specific movement and condition are tracked separately. Mission-level time, memory, data, objectives and rewards are shared. This allows both players to contribute to a common science and exploration outcome.
 
-## Pruebas
-Ver `PROMPT-CONTINUAR-2Mars-V5.md` en la raíz del ZIP.
+## Project status
+
+V5.1 is the current source version in this repository. The [V5 game guide](../README.md) is the player-facing guide; the [V5 documentation index](README.md) links the technical and scientific references.

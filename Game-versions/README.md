@@ -1,32 +1,36 @@
 # Game versions
 
-This directory contains the playable development history of **2Mars**.
+This directory preserves the development history of **2Mars**. The latest source project is V5.1.
 
-## Current version
+## Current source
 
-<badge>Current</badge> **[V4 — 3D mission-design game](V4/README.md)**
+<badge color="success">Current</badge> **[V5.1 — Design a Rover Mission](V5/README.md)**
 
-V4 is the main version to open, play, test and reference. It is built with Godot 4.7.
+- Godot project version: `5.1.0`
+- Engine: Godot 4.7
+- Main project: `V5/project.godot`
+
+Start with the [V5 game guide](V5/README.md), then consult the [V5 documentation index](V5/docs/README.md).
 
 ## Version history
 
-| Version | Status | Description |
+| Version | Status | Role |
 |---|---|---|
-| [V1](V1/V1-2Mars/README.md) | Early prototype | Initial Godot project and foundational gameplay. |
-| [V3](V3/README.md) | Previous playable version | Expanded mission flow, planning, rover configuration and Mars operations. |
-| [V4](V4/README.md) | **Current** | 3D rover and exploration presentation, expanded progression, co-op, science library and updated mission systems. |
+| [V1](V1/V1-2Mars/README.md) | Archived | Initial prototype. |
+| [V3](V3/README.md) | Archived | Earlier playable development version. |
+| [V4](V4/README.md) | Archived | Previous expanded version. |
+| [V5](V5/README.md) | **Current source (V5.1.0)** | Current mission-design and Mars exploration project. |
 
-There is no separate V2 project folder in this repository. Do not infer that every intermediate build is archived here.
+There is no separate V2 project folder in this repository.
 
-## Which version should I use?
+## Navigation
 
-- **To play or develop the current game:** use V4.
-- **To inspect the previous implementation:** use V3.
-- **To understand the original prototype:** use V1.
-- **To review scientific evidence and project decisions:** use the V4 [documentation index](V4/docs/README.md).
+- **Current project:** [V5.1 guide](V5/README.md).
+- **Current technical documentation:** [V5 docs](V5/docs/README.md).
+- **Project evidence:** [repository evidence index](../evidence/README.md).
+- **Scientific references:** [research index](../research/README.md).
 
-Older versions are retained for project history and comparison. They are not the active development target.
+Older versions are retained for historical comparison. Their documentation may describe features or tests that do not apply to V5; use V5-specific documentation for current claims.
 
 ---
-
-*2Mars · Team SpaceNuts*
+*2Mars · Team SpaceNuts · NASA Space Apps Challenge 2026*

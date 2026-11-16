@@ -1,23 +1,32 @@
-# Fuentes de la planificación de misión (V5)
+# Mission-planning sources · 2Mars V5.1
 
-El encargo cita `docs/research/SPACE_MISSION_PLANNING_SOURCES_EN.md` como referencia principal. **Ese archivo no se recibió.** Este documento recoge solo lo que se verificó directamente el 15-11-2026; no sustituye al del equipo.
+This document records the NASA/JPL references used to explain selected mission-planning ideas in the V5 Science Library. The game presents these ideas as educational context and simplified decisions, not as a flight-dynamics calculation.
 
-## Datos reales usados en «Conocer más»
+## NASA/JPL references
 
-| Dato | Fuente | URL |
+| Subject | Reference | How it informs the game |
 |---|---|---|
-| Mars 2020 despegó en un Atlas V 541 el 30 de julio de 2020; el rover pesa unos 1.025 kg | NASA/JPL, Mars 2020 Launch Press Kit, Quick Facts | https://www.jpl.nasa.gov/news/press_kits/mars_2020/launch/quick_facts/ |
-| La nave incluía etapa de crucero, aeroescudo y etapa de descenso; la Tierra adelanta a Marte cada ~26 meses; capacidad del cohete, masa de la nave y geometría de llegada definieron el periodo de lanzamiento | NASA/JPL, Mars 2020 Launch Press Kit, Mission Overview | https://www.jpl.nasa.gov/news/press_kits/mars_2020/launch/mission/ |
-| Llegada el 18 de febrero de 2021, unos seis meses y medio después | NASA/JPL, Mars 2020 Landing Press Kit | https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/ |
-| Jezero: antiguo lago y delta; acantilados, dunas y rocas lo hacen peligroso; la navegación relativa al terreno permitió elegirlo | NASA Photojournal PIA24167 | https://science.nasa.gov/photojournal/jezeros-hazard-map/ |
+| Mars 2020 launch vehicle and launch facts | [NASA/JPL Mars 2020 Launch Press Kit — Quick Facts](https://www.jpl.nasa.gov/news/press_kits/mars_2020/launch/quick_facts/) | Provides historical context for the real Mars 2020 launch and spacecraft. |
+| Mission architecture and launch period | [NASA/JPL Mars 2020 Launch Press Kit — Mission Overview](https://www.jpl.nasa.gov/news/press_kits/mars_2020/launch/mission/) | Explains the cruise stage, aeroshell, descent stage and the relationship between launch timing and Earth–Mars geometry. |
+| Mars 2020 arrival | [NASA/JPL Mars 2020 Landing Press Kit](https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/) | Provides historical context for the real mission's interplanetary cruise and arrival. |
+| Jezero landing hazards | [NASA Photojournal — Jezero's Hazard Map (PIA24167)](https://science.nasa.gov/photojournal/jezeros-hazard-map/) | Shows why landing-site selection and terrain hazards matter. |
 
-Sin verificar en fuente NASA en esta sesión: la descripción de la transferencia de Hohmann (se usa solo como referencia didáctica) y las masas individuales de las etapas de Mars 2020 (no se usan).
+## Educational concepts represented
 
-## Parámetros educativos de 2Mars (no son datos de la NASA)
+The game introduces mission-planning concepts through simplified choices involving:
 
-- Lanzadores ficticios 2M Ligero / Medio / Pesado: 1.440 / 1.680 / 1.980 kg y 300 / 600 / 900 CR.
-- Pila de lanzamiento: etapa de descenso = masa del rover, aeroescudo = masa del rover, crucero 200 kg, propelente 40 / 100 / 190 kg según la transferencia (+30 kg si es rápida fuera de la ventana óptima).
-- Transferencias: 8,5 / 7 / 5,5 meses; tiempo en superficie ×0,94 / ×1 / ×1,08; esfuerzo de aterrizaje ×0,75 / ×1 / ×1,35.
-- Ventanas A/B/C: escenarios de juego, no fechas.
-- Créditos (CR): unidad ficticia.
-- Desafío arcade: meteoritos, rayos, sismos, frentes fríos y vórtices que atraen son ficticios.
+- Launch scenarios and launch timing.
+- Spacecraft/rover mass and available launch capability.
+- Cruise duration and mission time.
+- Landing-area selection and terrain hazards.
+- The relationship between mission objectives, payload and rover configuration.
+
+These are educational abstractions. The game does not solve a Hohmann transfer, compute Delta-V, model a real launch vehicle's performance envelope or calculate an operational Mars entry/descent/landing trajectory.
+
+## Game-model values
+
+Launch vehicle names, capacities, credits, transfer durations, scenario windows, stage masses and landing multipliers are game parameters. They are not historical launch manifests or certified NASA engineering data. Refer to `Game-versions/V5/scripts/data.gd` for the implementation and to the in-game Science Library for the distinction between real-world context and the 2Mars model.
+
+## Use in evaluation
+
+Use these references to explain why mission design involves coupled decisions. Do not describe the game as a real orbital mechanics simulator or claim that its selected launch scenario represents a feasible launch date for an actual spacecraft.

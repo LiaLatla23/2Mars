@@ -21,6 +21,8 @@ The rover you design is the rover you operate. Choices about mass, power, mobili
 
 **[Open the web demo](https://2mars.vercel.app/)** · **[Explore the V5.1 source project](Game-versions/V5/)**
 
+> **Build note:** V5.1 is the current source in this repository. The public web demo is a separate deployment and has not been independently verified as the V5.1 build; use the V5 source project above for the exact current version.
+
 ## Gameplay at a glance
 
 ```mermaid

@@ -1,73 +1,36 @@
-# Test report · 2Mars V4
+# Test report · 2Mars V5.1
 
-## Scope
+## Available test assets
 
-V4 includes an automated test scene and a test bot that interacts with the actual game flow. The bot uses a dedicated save path (`user://2mars_bot_save.json`) so it does not overwrite normal player saves. It supports English and Spanish runs, a quick full-mission route, V4-specific checks, and optional screenshot capture when run with a display.
+The V5 project includes automated test scenes and scripts:
 
-The repository also records that team members manually played complete game sessions. These were internal playtests, not external user testing or a formal educational-impact evaluation.
+- `Game-versions/V5/tests/Compile.tscn` and `compile.gd` — script compilation checks.
+- `Game-versions/V5/tests/Bot.tscn` and `bot.gd` — automated interaction with game flows and gameplay systems.
+- `Game-versions/V5/tests/Layout.tscn` and `layout.gd` — interface/layout checks.
+
+The bot is intended to exercise the game using its normal input and rules. The presence of these files documents available test coverage; it does not establish that the latest V5.1 build passed a fresh run.
 
 ## Reproduce the checks
 
-Run commands from the repository root with Godot 4.7 available on your PATH.
+Run from the repository root with Godot 4.7 available on your PATH:
 
 ```bash
-# Load/compile scripts through the project's compile test
-godot --headless --path Game-versions/V4 res://tests/Compile.tscn
-
-# Run the complete automated bot suite
-godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn
-
-# Run the complete bot in Spanish
-godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn -- --es
-
-# Run the shorter full-mission route
-godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn -- --quick
-
-# Run the quick route plus V4-specific checks
-godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn -- --quick --v4
+godot --headless --path Game-versions/V5 res://tests/Compile.tscn
+godot --headless --fixed-fps 60 --path Game-versions/V5 res://tests/Bot.tscn
+godot --headless --path Game-versions/V5 res://tests/Layout.tscn
 ```
 
-The bot prints a final line in this form:
+Preserve the actual console output, Godot version, operating system and commit hash when reporting a test result.
 
-```text
-BOT SUMMARY: <number> checks; <number> failures
-```
+## Evidence status
 
-The compile test prints:
+Team members have manually played complete game sessions. These are internal playtests, not external user testing or a formal educational-impact evaluation.
 
-```text
-COMPILE SUMMARY: <number> scripts; <number> failures
-```
+No new automated test execution is claimed in this documentation update. A successful result should be added only after running the commands and recording the actual output.
 
-A successful run should exit with code 0 and report zero failures. Preserve the actual console output, Godot version, operating system and commit hash when recording a test result.
+## Limits
 
-## Test coverage visible in the bot
-
-The current `Game-versions/V4/tests/bot.gd` contains checks for:
-
-- Engineering catalogue size and component availability.
-- Rover mass, cost, power generation, energy storage and data storage.
-- Compatibility blockers, limitations, risks and readiness recommendations.
-- Mission progression and a complete mission route.
-- Multiple rover builds and exploration zones.
-- Save/load behaviour and edge cases.
-- Sandbox mode and local cooperative mode.
-- Language-related flows and interface screens.
-- V4-specific progression, inventory, Mars base and 3D rover presentation.
-
-This list describes areas covered by the test code; it is not a claim that a fresh test run was executed as part of this documentation update.
-
-## Test evidence log
-
-No new automated test execution was performed as part of this documentation change. Add a dated entry only after running the commands above:
-
-| Date | Commit | Godot version / OS | Command | Checks or scripts | Failures | Log |
-|---|---|---|---|---:|---:|---|
-| _Add after execution_ | — | — | — | — | — | — |
-
-## Known limits
-
-- Automated tests are regression checks written by the development team; they are not independent QA certification.
+- Automated tests are regression checks written by the development team, not independent QA certification.
 - Internal manual playtesting does not establish usability for external students.
 - No measured educational outcomes or controlled classroom evaluation are documented.
-- Controller mapping should be treated as unverified unless tested on the intended controller and platform.
+- Controller support should be treated as unverified unless tested on the intended controller and platform.

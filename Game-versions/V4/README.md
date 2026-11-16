@@ -1,98 +1,180 @@
-# 2Mars — Design a Rover Mission (V4)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/brand/logo_2mars.png" alt="2Mars logo" width="190">
+</p>
 
-*Design your mission. Operate your rover. Discover Mars.*
+<h1 align="center">2Mars · V4</h1>
+<p align="center"><strong>Design your mission. Operate your rover. Discover Mars.</strong></p>
+<p align="center">Current playable version · Godot 4.7 · English / Español</p>
 
-Educational mission-design game for the NASA Space Apps Challenge 2026 (Space Mission Design Game), by team SpaceNuts.
-Developed in several sessions during November 14 and 15, 2026.
-
-V4 continues V3 without rebuilding it. What is new:
-
-- A real **3D rover** built from the parts you install, with spinning and steering wheels, suspension, mast, arm, drill and antenna animations.
-- **3D exploration terrain** seen from above with an orthographic camera; the mission rules are the same as V3.
-- A **3D Mars globe**, a 3D workshop and a 3D Mars landscape behind the menus.
-- Illustrated cards, icons, medals and animated bars across the interface, driven by a shared motion system (`scripts/motion.gd`).
-- **Upgrades** bought with science received on Earth, a **Mars base**, a visual **science inventory**, a redesigned mission panel, library and debrief.
-- New music (four themes with crossfades), new sound effects, and a launch clip.
-- Graphics quality setting and a frame meter (**F3**).
-
-See `docs/HANDOFF.md` for what changed and what is still pending, `docs/RESOURCE_AUDIT.md` for sources and attribution, and `docs/SUBMISSION_RESOURCES.md` for the submission form.
-
-The sections below describe the mission flow, which V4 keeps from V3.
+<p align="center">
+  <a href="https://2mars.vercel.app">Play online</a> ·
+  <a href="../../README.md">Repository home</a> ·
+  <a href="docs/README.md">Documentation</a> ·
+  <a href="docs/SCIENCE_TRACEABILITY.md">Science traceability</a>
+</p>
 
 ---
 
-## Run
+## About this version
 
-Open `project.godot` with **Godot 4.7** and press **F5**. No extra dependencies, no plugins.
+V4 is the current version of 2Mars. It is an educational mission-design and management game developed by Team SpaceNuts for the NASA Space Apps Challenge 2026.
 
-The first start asks for language (English / Español) and input mode (mouse, keyboard, or both). Both can be changed later in Settings.
+Players plan a Mars mission, configure a rover, launch, travel to Mars, complete a simplified landing sequence, and conduct scientific operations. Mission planning and engineering choices affect the resources, instruments, risks and science results available later.
 
-Saves: `user://2mars_save.json` (three campaign files and a separate Sandbox state). The project keeps the old user folder name, so a ToMars 1.0 save (`tomars_save.json`) is imported into file 1 the first time and is never modified.
+### In-game component artwork
 
-## The mission flow
+The following images are the actual component sprites used by the V4 rover workshop, not external concept art:
 
-1. **Dr. Owen's briefing** — your name, rover and mission names, and the six connected factors: time, data, budget, mass, energy, communications.
-2. **Earth station** — current rover, real statistics, budget, and advice based on your saved missions.
-3. **Mission panel** — a real-time 3D Mars globe (drag to rotate, wheel to zoom) and the four zones of Jezero Crater.
-4. **Mission planning** — launch window, mission profile, landing site, science priority. Each changes limits, time, data target or the landing.
-5. **Workshop** — 30 components from the team's engineering workbook in 7 categories, with a before/after comparison for every part.
-6. **Mission Readiness** — critical blockers, operational risks, scientific limitations, optional recommendations.
-7. **Launch → cruise → landing** — two cruise events with decisions, and a landing whose outcome depends on the design.
-8. **Operations on Mars** — drive, photograph (up to 3 angles), analyse, sample, store, transmit.
-9. **Debrief** — six dimensions, root causes, what went well, and what to change next time.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/rocker.png" alt="Rocker-bogie suspension" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/wheels_std.png" alt="Standard rover wheels" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/rtg.png" alt="Radioisotope power system" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/mastcam.png" alt="Mastcam instrument" width="110">
+  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/drill.png" alt="Sample drill" width="110">
+</p>
 
-Required objectives complete the mission. Optional objectives are extra science and achievements.
+## What's included
+
+- **Campaign and Sandbox** modes.
+- **Local two-player co-op** with complementary roles: Mission Commander and Rover Engineer & Scientist.
+- **Bilingual interface:** English and Spanish.
+- **3D presentation:** modular rover model, Martian exploration terrain, Mars globe and mission environments.
+- **Mission design:** launch window, mission profile, landing site and science priority.
+- **Rover workshop:** about 30 components across seven categories, with engineering trade-offs.
+- **Science operations:** seven primary science instruments, target investigation, sample collection, data storage and communications.
+- **Mission progression:** upgrades, a Mars base, science inventory, achievements and a structured debrief.
+- **Science Library:** real NASA/JPL references, mission stories and an explicit source-to-gameplay traceability section.
+
+2Mars simplifies complex engineering for learning and play. It is not a professional mission-design tool or a high-fidelity orbital simulator.
+
+## Play
+
+### Online
+
+Visit **[2mars.vercel.app](https://2mars.vercel.app)**.
+
+### Run with Godot
+
+1. Install **Godot Engine 4.7**.
+2. Open Godot and choose **Import**.
+3. Select this folder's `project.godot`.
+4. Open the project and press **F5**.
+
+No extra Godot plugins are required.
+
+### First launch
+
+The game asks the player to select:
+- Interface language: English or Spanish.
+- Input preference: mouse, keyboard, or both.
+
+These preferences can be changed later in Settings.
+
+## Mission flow
+
+1. **Briefing:** meet Dr. Owen, name the mission and review the six connected constraints.
+2. **Earth station:** review the rover, mission status and available resources.
+3. **Mission planning:** choose a launch window, mission profile, landing site and science priority.
+4. **Workshop:** configure the rover and balance mass, budget, power, mobility and science capability.
+5. **Mission readiness:** review blockers, risks and recommendations before launch.
+6. **Launch and transit:** make decisions during cruise and follow the simplified entry, descent and landing sequence.
+7. **Mars operations:** drive, investigate targets, use instruments, collect samples, store data and transmit results.
+8. **Debrief:** review mission performance, consequences and recommendations.
+
+Required objectives complete the mission; optional objectives provide additional science and achievements.
 
 ## Controls
 
 | Action | Keyboard | Mouse |
 |---|---|---|
-| Drive | WASD / arrows | hold the button on the ground |
-| Study a rock | E | click the rock |
-| Choose / confirm | 1–6 · Enter | click the button |
-| Instrument action | Space | click |
-| Transmit | T | Transmit button |
-| Data · AutoNav · Controls | Tab · G · H | action bar |
-| Weather · Oxygen · Radar | M · O · R | action bar |
+| Drive | WASD / arrow keys | Hold the on-screen drive control |
+| Study a rock | E | Select the rock |
+| Choose / confirm | 1–6 / Enter | Select the option |
+| Instrument action | Space | Select the action |
+| Transmit data | T | Transmit button |
+| Data / AutoNav / Controls | Tab / G / H | Action bar |
+| Weather / Oxygen / Radar | M / O / R | Action bar |
 | Pause | Esc | Pause button |
-| Fullscreen | F11 | |
+| Fullscreen | F11 | — |
 
-**Local co-op (two players, one computer).** Mission Commander: arrows drive, T transmits, Enter confirms. Rover Engineer & Scientist: E, 1–6, Space, M, O, R, G; F confirms (button A on a controller is mapped but was not tested). Three decisions need both players: the mission plan, the design review before launch, and ending the mission.
+### Local co-op
 
-**Sandbox.** Free workshop with adjustable mass and budget limits, any zone, a test drive, reset and its own hangar. It never changes campaign rovers, progress or history.
+Two players share one computer and take complementary responsibilities:
 
-## Tests
+- **Mission Commander:** drives with the arrow keys, transmits with T and confirms with Enter.
+- **Rover Engineer & Scientist:** handles science and rover actions using E, 1–6, Space, M, O, R and G; F confirms.
 
-Run with a fixed frame rate so that timing is deterministic. The bot uses its own save file.
+Some major decisions require both players. A controller mapping exists, but controller support should be considered unverified unless tested on the target device.
 
+### Sandbox
+
+Sandbox offers a separate free-design environment with adjustable mass and budget limits, zone selection, test driving and reset. Sandbox state is separate from Campaign progress and history.
+
+## Testing
+
+The V4 project includes an automated bot and a script compilation test.
+
+Run these commands from the repository root:
+
+```bash
+# Compile the project scripts
+godot --headless --path Game-versions/V4 res://tests/Compile.tscn
+
+# Run the automated test bot
+godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn
+
+# Run the bot in Spanish
+godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn -- --es
+
+# Run the shorter full-mission test
+godot --headless --fixed-fps 60 --path Game-versions/V4 res://tests/Bot.tscn -- --quick
 ```
-godot --headless --fixed-fps 60 res://tests/Bot.tscn                # everything
-godot --headless --fixed-fps 60 res://tests/Bot.tscn -- --es        # everything, in Spanish
-godot --headless --fixed-fps 60 res://tests/Bot.tscn -- --quick     # one full mission, start to debrief
-godot --fixed-fps 60 res://tests/Bot.tscn -- --shots=FOLDER         # also saves screenshots (needs a display)
-godot --headless res://tests/Compile.tscn                           # compiles every script
+
+The bot uses a separate save file and is designed to exercise the actual game flow. The team has also manually played complete game sessions. These internal playtests are not a formal external educational-impact study.
+
+## Project structure
+
+```text
+V4/
+├── assets/       Fonts, audio, logo and game visuals
+├── docs/         Technical documentation and project evidence
+├── scenes/       Godot scenes
+├── scripts/      Game state, data, UI and gameplay systems
+├── shaders/      Visual shaders
+├── tests/        Automated test bot and compile test
+├── tools/        Capture, preview and asset-generation utilities
+├── icon.svg
+└── project.godot
 ```
 
-The bot plays the real game: it presses the interface buttons, drives with input actions and runs the instruments under the normal rules.
+## Scientific foundation
 
-## Structure
+NASA and NASA/JPL mission documentation—especially the Mars 2020 Perseverance mission—inform the game's science objectives, instruments, rover systems, sample collection, mobility and communications.
 
-- `scripts/game.gd` — global state: settings, save files, plan, achievements, mission history, audio
-- `scripts/data.gd` — component catalogue, groups, instruments, rocks, zones, planning options, quizzes, readiness rules, recommendations, real NASA facts and sources
-- `scripts/ui.gd`, `scripts/art.gd`, `scripts/screen.gd`, `scripts/settings.gd` — UI kit, vector art, screen base (Dr. Owen panel, co-op gate), settings dialog
-- `scripts/screens/` — boot, menu, profiles, achievements, briefing, hub, zones, plan, design, transit, ops, debrief, progress, library
-- `shaders/globe.gdshader` — the Mars globe
-- `assets/` — fonts, synthesised audio, the team's 2MARS logo
-- `docs/` — requirement checklist, science traceability, rubric mapping, cinematic briefs, handoff notes
+The Science Library distinguishes:
+- **Real mission facts** supported by NASA/JPL references.
+- **Game parameters** used to make mission management playable.
+- **Fictional elements** such as Dr. Owen, the player's rover and mission.
 
-## Real data and game model
+Examples of deliberate simplifications include the game's 300 W RTG parameter compared with Perseverance's approximately 110 W MMRTG output at mission start, accelerated communications and time, and simplified landing and mission-planning models.
 
-- **Verified NASA information** is shown apart, with its source: the library tabs "The real rover" and "Real samples", and Dr. Owen's mission stories.
-- **Game model.** Component mass, power, credits and scores come from the team's workbook and are game parameters. Battery Wh, memory MB, link rates, times and the landing are balancing values. One second of play is ten mission minutes. Example of the difference: the game's RTG gives 300 W; Perseverance's real MMRTG gives about 110 W.
-- **Fiction.** Dr. Owen, your team, your rover, the mission, and every rock and sample you study.
+Read the [NASA resource inventory](../../research/NASA_RESOURCES_USED.md) and [V4 science traceability](docs/SCIENCE_TRACEABILITY.md) for the full source mapping.
 
-NASA has not confirmed life on Mars; the game never says otherwise. 2Mars is not affiliated with or endorsed by NASA.
+## Documentation
+
+The [V4 documentation index](docs/README.md) explains where to find:
+- Requirements and rubric mapping.
+- Scientific source traceability.
+- Resource and media attribution.
+- Cinematic and animation notes.
+- Development handoff and submission references.
 
 ## Credits
 
-Team SpaceNuts (Panama). Art: original vector art drawn by code; 2MARS logo by the team. Sound and music: synthesised for the game. Fonts: Fredoka and Nunito (SIL Open Font License). Engine: Godot 4.7.
+**Team:** SpaceNuts · Panama  
+**Engine:** Godot 4.7 · GDScript  
+**Web deployment:** Vercel  
+**Fonts:** Fredoka and Nunito (SIL Open Font License)  
+**Visual and development workflow:** see [Resource Audit](docs/RESOURCE_AUDIT.md) for tool-specific attribution.
+
+2Mars is an independent student project and is not affiliated with or endorsed by NASA.

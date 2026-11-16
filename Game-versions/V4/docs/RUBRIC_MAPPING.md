@@ -6,7 +6,7 @@ Developed in several sessions during November 14 and 15.
 ## Impact
 - **Problem addressed:** mission design is usually taught as facts. 2Mars lets a 15-year-old feel why a rover cannot carry everything.
 - **Evidence in the build:** a first-time tutorial that completes on real actions; English and Spanish; mouse-only, keyboard-only or both; reduced-motion option; local co-op for classrooms with one computer.
-- **Not yet shown:** nobody outside the team has played this version. A short play session with real students would be the strongest impact evidence.
+- **Playtesting evidence:** team members have manually played complete game sessions. This is internal functional playtesting, not an external study. No learning outcomes have been measured with students outside the team.
 
 ## Creativity
 - One loop that joins **mission design, rover operations and planetary science**: the rover you build is the rover you drive, and the debrief traces the result back to the design.
@@ -17,7 +17,7 @@ Developed in several sessions during November 14 and 15.
 - Runs in Godot 4.7 with no plugins. 188 automated checks pass in English and Spanish, played under the normal rules by a bot.
 - Power in W, stored energy in Wh and data in MB are kept consistent; generation and consumption are never mixed.
 - Real NASA facts are shown apart from game values, each with its source. Game values are labelled as a model.
-- **Limits:** balance was tuned with a bot, not with players. The landing is a simplified model. Controller input is mapped but untested.
+- **Limits:** the automated bot supports repeatable regression testing and the team has completed manual full-game playtests; however, no systematic external balance study or educational-impact evaluation has been conducted. The landing is a simplified model. Controller input is mapped but untested.
 
 ## Relevance
 - Challenge: Space Mission Design Game. The player defines objectives, plans, designs, launches, operates and evaluates a mission.

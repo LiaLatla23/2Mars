@@ -1,13 +1,13 @@
 # Traspaso de 2Mars V4
 
-Para el equipo SpaceNuts. V4 continúa V3 (`2mars-game-V3.zip`) sin rehacerla. Trabajo hecho el 15 de noviembre de 2026.
+Para el equipo SpaceNuts. V4 continúa V3 sin rehacerla. Este documento es una **fotografía del estado de desarrollo del 15 de noviembre de 2026**, no un panel de estado actualizado automáticamente.
 El relevo de V3 se conserva en `HANDOFF_V3.md`.
 
-Nada se subió a GitHub, se publicó ni se desplegó. No se gastaron créditos de pago.
+**Actualización posterior:** el repositorio se publicó en GitHub (`Savamg/2Mars`) y la versión web actual está desplegada en `https://2mars.vercel.app/`. La frase «Nada se subió a GitHub, se publicó ni se desplegó» describía únicamente el momento original de redacción de esta nota.
 
 ## Cómo abrirlo y probarlo
 
-1. Godot 4.7 estable → Importar → `V4-2Mars/project.godot` → F5.
+1. Godot 4.7 estable → Importar → `Game-versions/V4/project.godot` (desde la raíz del repositorio) → F5.
 2. Compilar todos los scripts: `godot --headless --path . res://tests/Compile.tscn`
 3. Bot completo (unos minutos): `godot --headless --fixed-fps 60 --path . res://tests/Bot.tscn` · en español: `-- --es`
 4. Una misión y las comprobaciones de V4: `-- --quick --v4`
@@ -71,7 +71,7 @@ Luz de las escenas 3D: `world3d.gd` (`SUN_DAY`, `AMBIENT_DAY`) y `stage3d.gd`. S
 ## Lo que falta, por orden de valor
 
 1. **Confirmar la procedencia** del logotipo, la hoja de iconos y el vídeo, y aplicar la regla de marca visible (`RESOURCE_AUDIT.md`, sección 1).
-2. **Que lo juegue una persona.** Nadie ha jugado V4 a mano ni ha escuchado la música. El balance viene de V3 y se comprobó con un bot.
+2. **Playtesting y audio.** Integrantes del equipo ya jugaron manualmente partidas completas de V4. Esto valida el flujo interno, pero no sustituye pruebas externas con estudiantes ni una evaluación de aprendizaje. La música todavía debe escucharse y revisarse en condiciones normales.
 3. **Medir el rendimiento en un equipo con GPU** (F3). Aquí solo hubo render por software.
 4. **Probar con mando.** Está mapeado, no probado.
 5. Tutorial: demostración animada por paso.

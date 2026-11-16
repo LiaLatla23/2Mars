@@ -1,98 +1,97 @@
-# 2Mars — Design a Rover Mission (V4)
+# 2Mars V5.1 — Design a Rover Mission
 
 *Design your mission. Operate your rover. Discover Mars.*
 
-Educational mission-design game for the NASA Space Apps Challenge 2026 (Space Mission Design Game), by team SpaceNuts.
-Developed in several sessions during November 14 and 15, 2026.
+**2Mars** is an educational Mars mission design and exploration game created by Team SpaceNuts for the **NASA Space Apps Challenge 2026 — Space Mission Design Game**.
 
-V4 continues V3 without rebuilding it. What is new:
+<badge color="success">Current source</badge> **Project version 5.1.0** · Godot 4.7 · GDScript
 
-- A real **3D rover** built from the parts you install, with spinning and steering wheels, suspension, mast, arm, drill and antenna animations.
-- **3D exploration terrain** seen from above with an orthographic camera; the mission rules are the same as V3.
-- A **3D Mars globe**, a 3D workshop and a 3D Mars landscape behind the menus.
-- Illustrated cards, icons, medals and animated bars across the interface, driven by a shared motion system (`scripts/motion.gd`).
-- **Upgrades** bought with science received on Earth, a **Mars base**, a visual **science inventory**, a redesigned mission panel, library and debrief.
-- New music (four themes with crossfades), new sound effects, and a launch clip.
-- Graphics quality setting and a frame meter (**F3**).
+## Overview
 
-See `docs/HANDOFF.md` for what changed and what is still pending, `docs/RESOURCE_AUDIT.md` for sources and attribution, and `docs/SUBMISSION_RESOURCES.md` for the submission form.
+Players take part in a complete Mars rover mission, from the first briefing to the final debrief. They define objectives, make mission-planning choices, configure a rover, assess readiness, travel to Mars and carry out science operations. Rover design and operational constraints shape the available choices and mission outcome.
 
-The sections below describe the mission flow, which V4 keeps from V3.
+## Mission flow
 
----
+1. **Briefing** — meet Dr. Owen, name the mission and review its objectives.
+2. **Planning** — choose a mission profile, launch scenario, landing area and science priorities.
+3. **Rover workshop** — configure a rover using 30 components in seven categories.
+4. **Readiness review** — inspect design blockers, risks, limitations and recommendations.
+5. **Launch and transit** — progress through launch, cruise and landing events.
+6. **Mars operations** — drive, investigate targets, use instruments, collect samples, manage resources and transmit data.
+7. **Debrief and progression** — review mission performance, scientific results and achievements.
 
-## Run
+## Game modes
 
-Open `project.godot` with **Godot 4.7** and press **F5**. No extra dependencies, no plugins.
+- **Single player:** plan, build and operate a rover independently.
+- **Local cooperative play:** two players share one computer and coordinate mission responsibilities.
+- **Expedition co-op (V5.1):** two rovers operate in the same mission using a fixed split-screen layout. Each rover has its own position, speed, energy, health and sample tubes, while mission time, memory, data, objectives and rewards are shared.
 
-The first start asks for language (English / Español) and input mode (mouse, keyboard, or both). Both can be changed later in Settings.
+There is no online multiplayer.
 
-Saves: `user://2mars_save.json` (three campaign files and a separate Sandbox state). The project keeps the old user folder name, so a ToMars 1.0 save (`tomars_save.json`) is imported into file 1 the first time and is never modified.
+## Expedition co-op controls
 
-## The mission flow
-
-1. **Dr. Owen's briefing** — your name, rover and mission names, and the six connected factors: time, data, budget, mass, energy, communications.
-2. **Earth station** — current rover, real statistics, budget, and advice based on your saved missions.
-3. **Mission panel** — a real-time 3D Mars globe (drag to rotate, wheel to zoom) and the four zones of Jezero Crater.
-4. **Mission planning** — launch window, mission profile, landing site, science priority. Each changes limits, time, data target or the landing.
-5. **Workshop** — 30 components from the team's engineering workbook in 7 categories, with a before/after comparison for every part.
-6. **Mission Readiness** — critical blockers, operational risks, scientific limitations, optional recommendations.
-7. **Launch → cruise → landing** — two cruise events with decisions, and a landing whose outcome depends on the design.
-8. **Operations on Mars** — drive, photograph (up to 3 angles), analyse, sample, store, transmit.
-9. **Debrief** — six dimensions, root causes, what went well, and what to change next time.
-
-Required objectives complete the mission. Optional objectives are extra science and achievements.
-
-## Controls
-
-| Action | Keyboard | Mouse |
+| Action | Player 1 (left) | Player 2 (right) |
 |---|---|---|
-| Drive | WASD / arrows | hold the button on the ground |
-| Study a rock | E | click the rock |
-| Choose / confirm | 1–6 · Enter | click the button |
-| Instrument action | Space | click |
-| Transmit | T | Transmit button |
-| Data · AutoNav · Controls | Tab · G · H | action bar |
-| Weather · Oxygen · Radar | M · O · R | action bar |
-| Pause | Esc | Pause button |
-| Fullscreen | F11 | |
+| Move | W A S D | Arrow keys |
+| Study / cycle panel option | E | Period (.) |
+| Confirm action / minigame | Space | Enter |
+| Transmit | T | Comma (,) |
+| Pause | Esc | Esc |
 
-**Local co-op (two players, one computer).** Mission Commander: arrows drive, T transmits, Enter confirms. Rover Engineer & Scientist: E, 1–6, Space, M, O, R, G; F confirms (button A on a controller is mapped but was not tested). Three decisions need both players: the mission plan, the design review before launch, and ending the mission.
+In a rock-study panel, E or . cycles through the available options; Space or Enter performs the selected action. Number keys 1–6 can also select options.
 
-**Sandbox.** Free workshop with adjustable mass and budget limits, any zone, a test drive, reset and its own hangar. It never changes campaign rovers, progress or history.
+## Science Library
 
-## Tests
+The in-game Science Library includes seven Perseverance science instruments, rover components, real sample examples, NASA-to-game explanations, mission stories, a glossary and source links. It distinguishes NASA-sourced information from game-balance values and fictional story elements.
 
-Run with a fixed frame rate so that timing is deterministic. The bot uses its own save file.
+## Run the project
 
+1. Install **Godot Engine 4.7**.
+2. Open `project.godot` from this folder in Godot.
+3. Press **F5** to run the project.
+
+No extra Godot plugins are required by the project configuration. Player progress is saved in the Godot user data directory.
+
+## Automated test assets
+
+V5 includes test scenes for game-flow checks, script compilation and layout inspection. Run from the repository root:
+
+```bash
+godot --headless --path Game-versions/V5 res://tests/Compile.tscn
+godot --headless --fixed-fps 60 --path Game-versions/V5 res://tests/Bot.tscn
+godot --headless --path Game-versions/V5 res://tests/Layout.tscn
 ```
-godot --headless --fixed-fps 60 res://tests/Bot.tscn                # everything
-godot --headless --fixed-fps 60 res://tests/Bot.tscn -- --es        # everything, in Spanish
-godot --headless --fixed-fps 60 res://tests/Bot.tscn -- --quick     # one full mission, start to debrief
-godot --fixed-fps 60 res://tests/Bot.tscn -- --shots=FOLDER         # also saves screenshots (needs a display)
-godot --headless res://tests/Compile.tscn                           # compiles every script
-```
 
-The bot plays the real game: it presses the interface buttons, drives with input actions and runs the instruments under the normal rules.
+The presence of test scripts does not by itself prove a successful run. See the [test report](../../evidence/TEST_REPORT.md) for the distinction between available coverage and recorded execution evidence.
 
-## Structure
+## Project structure
 
-- `scripts/game.gd` — global state: settings, save files, plan, achievements, mission history, audio
-- `scripts/data.gd` — component catalogue, groups, instruments, rocks, zones, planning options, quizzes, readiness rules, recommendations, real NASA facts and sources
-- `scripts/ui.gd`, `scripts/art.gd`, `scripts/screen.gd`, `scripts/settings.gd` — UI kit, vector art, screen base (Dr. Owen panel, co-op gate), settings dialog
-- `scripts/screens/` — boot, menu, profiles, achievements, briefing, hub, zones, plan, design, transit, ops, debrief, progress, library
-- `shaders/globe.gdshader` — the Mars globe
-- `assets/` — fonts, synthesised audio, the team's 2MARS logo
-- `docs/` — requirement checklist, science traceability, rubric mapping, cinematic briefs, handoff notes
+| Path | Contents |
+|---|---|
+| `project.godot` | Godot configuration and project version. |
+| `scenes/` | Main scene. |
+| `scripts/` | Game state, data, interface, rover/world systems and mission screens. |
+| `assets/`, `parts/`, `fonts/` | Interface icons, rover parts, fonts and related assets. |
+| `shaders/` | Visual shaders. |
+| `tests/` | Automated test scenes and scripts. |
+| `video/` | Launch animation used by the game. |
+| `docs/` | Technical, scientific, attribution and challenge-alignment documentation. |
 
-## Real data and game model
+## Scientific scope and limitations
 
-- **Verified NASA information** is shown apart, with its source: the library tabs "The real rover" and "Real samples", and Dr. Owen's mission stories.
-- **Game model.** Component mass, power, credits and scores come from the team's workbook and are game parameters. Battery Wh, memory MB, link rates, times and the landing are balancing values. One second of play is ten mission minutes. Example of the difference: the game's RTG gives 300 W; Perseverance's real MMRTG gives about 110 W.
-- **Fiction.** Dr. Owen, your team, your rover, the mission, and every rock and sample you study.
+2Mars is an educational game, not a professional mission-design or flight-dynamics tool. Mission planning, launch windows, landing, rover statistics, resource limits and communication rates include simplified game models. The game does not calculate real orbital trajectories or Delta-V and does not directly load live NASA datasets or APIs.
 
-NASA has not confirmed life on Mars; the game never says otherwise. 2Mars is not affiliated with or endorsed by NASA.
+NASA has not confirmed life on Mars. The game does not claim otherwise. 2Mars is not affiliated with or endorsed by NASA.
+
+## Documentation
+
+- [V5 documentation index](docs/README.md)
+- [Challenge alignment](../../evidence/CHALLENGE_ALIGNMENT.md)
+- [Educational design](../../evidence/EDUCATIONAL_DESIGN.md)
+- [Mission walkthrough](../../evidence/MISSION_CASE_STUDY.md)
+- [Test report](../../evidence/TEST_REPORT.md)
+- [AI and asset attribution](../../evidence/AI_AND_ASSET_ATTRIBUTION.md)
 
 ## Credits
 
-Team SpaceNuts (Panama). Art: original vector art drawn by code; 2MARS logo by the team. Sound and music: synthesised for the game. Fonts: Fredoka and Nunito (SIL Open Font License). Engine: Godot 4.7.
+Created by **Team SpaceNuts · Panama**. Built with Godot 4.7 and GDScript. Production tools and asset attribution are documented in the [resource audit](docs/RESOURCE_AUDIT.md).

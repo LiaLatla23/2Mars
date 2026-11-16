@@ -1,37 +1,36 @@
-# Challenge alignment · 2Mars V4
+# Challenge alignment · 2Mars V5.1
 
-This document maps the implemented game to the central activities of a Space Mission Design Game. It is a repository evidence index, not a copy of the official NASA Space Apps Project Submission or a claim of an official judging score.
+This document maps the current V5.1 implementation to the central activities of the NASA Space Apps **Space Mission Design Game** challenge. It is supporting repository evidence, not a copy of the official Project Submission or a claim of an official judging score.
 
-## Mission-design experience
+## Mission-design activities
 
-| Mission-design activity | What the player does in 2Mars | Where to inspect it |
+| Activity | What players do in 2Mars | Where to inspect |
 |---|---|---|
-| Define mission goals | Reviews mission briefing, selects a mission profile and science priority. | `Game-versions/V4/scripts/screens/briefing.gd`, `plan.gd`, `Game-versions/V4/scripts/data.gd` |
-| Plan a mission | Chooses launch window, landing site, profile and science priority within a simplified planning model. | `Game-versions/V4/scripts/screens/plan.gd`, `data.gd` |
-| Design the spacecraft/rover | Configures a rover from a catalogue of 30 components and evaluates mass, cost, power, mobility, storage and instrument compatibility. | `Game-versions/V4/scripts/screens/design.gd`, `data.gd`, `Game-versions/V4/tests/bot.gd` |
-| Assess readiness and risk | Reviews blockers, limitations, risks and recommendations before launch. | `Game-versions/V4/scripts/screens/design.gd`, `data.gd` |
-| Launch and travel | Plays launch and transit sequences with simplified mission decisions. | `Game-versions/V4/scripts/screens/transit.gd`, `Game-versions/V4/assets/video/launch.ogv` |
-| Operate on Mars | Drives the rover, investigates targets, operates instruments, collects samples, manages stored data and transmits results. | `Game-versions/V4/scripts/screens/ops.gd`, `hub.gd`, `data.gd` |
-| Evaluate the mission | Reviews mission progress, inventory, achievements and debrief information. | `Game-versions/V4/scripts/screens/debrief.gd`, `progress.gd`, `achievements.gd` |
+| Define mission goals | Review the briefing and choose scientific priorities. | `Game-versions/V5/scripts/screens/briefing.gd`, `data.gd` |
+| Plan the mission | Select a mission profile, launch scenario, landing area and science priority. | `Game-versions/V5/scripts/screens/plan.gd`, `data.gd` |
+| Design the rover | Configure from 30 components across seven categories; balance mass, cost, power, mobility, storage and instrument compatibility. | `Game-versions/V5/scripts/screens/design.gd`, `data.gd` |
+| Assess readiness | Review blockers, limitations, risks and recommendations before launch. | `Game-versions/V5/scripts/data.gd`, `scripts/screens/design.gd` |
+| Launch and travel | Progress through launch, cruise and landing events. | `Game-versions/V5/scripts/screens/transit.gd`, `Game-versions/V5/video/launch.ogv` |
+| Operate on Mars | Drive, photograph and analyse targets, use instruments, collect samples, manage resources and transmit data. | `Game-versions/V5/scripts/screens/ops.gd` |
+| Evaluate the mission | Review mission results, progress, achievements and scientific inventory. | `Game-versions/V5/scripts/screens/debrief.gd`, `progress.gd`, `achievements.gd` |
 
-## Distinctive implementation choices
+## Distinctive design choices
 
-- The rover assembled in the workshop is represented in the 3D rover presentation and is used during surface operations.
-- The game connects planning, engineering, launch/transit, surface science and debrief in one mission flow.
-- Campaign and Sandbox provide different ways to engage with mission constraints.
-- Local two-player mode assigns complementary Mission Commander and Rover Engineer & Scientist responsibilities.
-- English and Spanish interfaces are included.
-- The Science Library includes Sources & Credits and NASA → Game sections. The latter contains six explicit source-to-gameplay trace entries documented in [science traceability](../Game-versions/V4/docs/SCIENCE_TRACEABILITY.md).
+- Rover configuration influences capabilities and constraints during surface operations.
+- Planning, engineering, launch/transit, science operations and debrief are connected in one experience.
+- The Science Library links NASA/JPL information to selected mechanics and player decisions.
+- English and Spanish interfaces and local cooperative play are included.
+- V5.1 Expedition mode allows two rovers to share one mission through a fixed split-screen view.
 
 ## Scientific and simulation boundaries
 
-2Mars is an educational game, not professional mission-design software. It does not calculate real orbital trajectories or Delta-V, does not load live NASA APIs or planetary datasets, and does not reproduce the complete Perseverance flight architecture. Launch windows, mass limits, landing and several resource/time values are simplified game models. Real facts, game-balance values and fictional story elements are distinguished in the Science Library and [NASA resource inventory](../research/NASA_RESOURCES_USED.md).
+2Mars is an educational game, not professional mission-design software. It does not calculate real orbital trajectories or Delta-V, use live NASA APIs or directly load NASA planetary datasets. Launch windows, mass and budget limits, landing outcomes, rover statistics and several time/resource values are simplified game models. Real facts, game-balance values and fictional elements are distinguished in the [science traceability](../Game-versions/V5/docs/SCIENCE_TRACEABILITY.md).
 
 ## How to verify
 
-- Play the [web build](https://2mars.vercel.app/).
-- Follow the [V4 installation and gameplay guide](../Game-versions/V4/README.md).
-- Inspect the referenced scripts in the V4 project.
-- Use the [test report](TEST_REPORT.md) for the current automated test commands and evidence limitations.
+- Open the [web demo](https://2mars.vercel.app/).
+- Follow the [V5.1 game guide](../Game-versions/V5/README.md).
+- Inspect the [V5 source project](../Game-versions/V5/).
+- Review the [test report](TEST_REPORT.md) for test coverage and execution limits.
 
-This mapping describes implemented features based on the repository structure and source reviewed for this documentation. It is not an independent certification of scientific or educational effectiveness.
+This mapping describes the implementation documented in the repository. It is not independent certification of scientific accuracy, educational effectiveness or external usability.

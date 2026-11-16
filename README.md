@@ -59,7 +59,7 @@ These captures show the V5 game interface and actual gameplay systems.
 
 ## Current source version
 
-<badge color="success">Current source</badge> **V5.1.0** · Godot Engine 4.7 · GL Compatibility renderer.
+**CURRENT SOURCE** **V5.1.0** · Godot Engine 4.7 · GL Compatibility renderer.
 
 V5.1 includes an Expedition co-op mode in which two rovers share one mission through a fixed split-screen view. Each rover has individual position, speed, energy, health and sample tubes; mission time, memory, data, objectives and rewards are shared. See the [V5 player guide](Game-versions/V5/README.md) and [V5 documentation index](Game-versions/V5/docs/README.md).
 

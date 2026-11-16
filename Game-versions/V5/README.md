@@ -6,6 +6,8 @@
 
 **CURRENT SOURCE** **Project version 5.1.0** · Godot 4.7 · GDScript
 
+**Play the game:** [Vercel (recommended)](https://2mars.vercel.app/) · [itch.io (alternative)](https://lialatla23.itch.io/2mars)
+
 ## Overview
 
 Players take part in a complete Mars rover mission, from the first briefing to the final debrief. They define objectives, make mission-planning choices, configure a rover, assess readiness, travel to Mars and carry out science operations. Rover design and operational constraints shape the available choices and mission outcome.

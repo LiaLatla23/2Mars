@@ -4,7 +4,7 @@ This directory preserves the development history of **2Mars**. The latest source
 
 ## Current source
 
-<badge color="success">Current</badge> **[V5.1 — Design a Rover Mission](V5/README.md)**
+**CURRENT** **[V5.1 — Design a Rover Mission](V5/README.md)**
 
 - Godot project version: `5.1.0`
 - Engine: Godot 4.7

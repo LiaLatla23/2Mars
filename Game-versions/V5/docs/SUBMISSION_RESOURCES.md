@@ -1,65 +1,41 @@
-# Recursos para el envío · 2Mars V4
+# Submission reference · 2Mars V5.1
 
-Equipo SpaceNuts · preparado el 15 de noviembre de 2026. Complementa `RESOURCE_AUDIT.md`.
-La publicación la hace el equipo. Antes de enviar, resolver los pendientes 1 a 3 de la auditoría.
+This document provides a concise reference inventory for the official NASA Space Apps Project Submission. It is supporting material, not a substitute for the live submission form. The official form is the source of truth for required fields, limits and current event rules.
 
-Campos comprobados en la *Project Submission Guide* oficial (15-11-2026): la pregunta «What tools, coding languages, hardware, or software did you use to develop your project?» y la sección «Use of Super Intelligence (SI)». El campo *References* consta en la *Judging & Awards Guide*. **No verificado:** que las tablas se pidan exactamente como `Link Text | Link Url`; comprobarlo en el formulario.
+## Project links
 
-## 1. Resources (recursos efectivamente usados)
-
-| Link Text | Link Url |
+| Resource | Link |
 |---|---|
-| Godot Engine 4.7 (MIT) | https://godotengine.org |
-| Fredoka font (SIL Open Font License) | https://fonts.google.com/specimen/Fredoka |
-| Nunito font (SIL Open Font License) | https://fonts.google.com/specimen/Nunito |
-| Python, NumPy, SciPy and Pillow (asset scripts) | https://www.python.org |
-| FFmpeg (video and audio conversion) | https://ffmpeg.org |
-| Claude by Anthropic (AI coding assistant) | https://www.anthropic.com |
-| Communications for the Planet Mars: Past, Present, and Future (arXiv 2211.14245, secondary source) | https://arxiv.org/abs/2211.14245 |
+| Public web demo | https://2mars.vercel.app/ |
+| Source repository | https://github.com/Savamg/2Mars |
+| Current source project | https://github.com/Savamg/2Mars/tree/main/Game-versions/V5 |
+| Project screenshots | https://github.com/Savamg/2Mars/tree/main/screenshots |
 
-Añadir aquí la herramienta con la que se generaron el logotipo, la hoja de iconos y el vídeo, cuando el equipo la confirme.
+## Tools and technologies
 
-## 2. NASA Data (documentación de misión; no se integraron datasets)
+- Godot Engine 4.7 and GDScript.
+- GitHub for source control and documentation.
+- Vercel for web deployment.
+- Python utility scripts and FFmpeg in the asset/media workflow.
+- Fredoka and Nunito fonts (SIL Open Font License).
+- Canva for visual references and art direction.
+- Claude and OpenAI Codex for AI-assisted code development.
+- ChatGPT for the 2Mars and SpaceNuts logos.
+- Higgsfield for launch and rover animation work.
+- Microsoft Copilot for assistance consolidating engineering spreadsheets.
 
-| Link Text | Link Url |
-|---|---|
-| Mars 2020 Perseverance · Science Objectives | https://science.nasa.gov/mission/mars-2020-perseverance/science-objectives/ |
-| Mars 2020 Perseverance · Science Instruments | https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments/ |
-| Mars 2020 Perseverance · Rover Components | https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/ |
-| Mars 2020 Perseverance · Mars Rock Samples | https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples/ |
-| NASA · Assessing Perseverance's First Sample Attempt | https://science.nasa.gov/blog/assessing-perseverances-first-sample-attempt/ |
-| NASA Glenn · Mars Perseverance Communications (NTRS 20210010148) | https://ntrs.nasa.gov/api/citations/20210010148/downloads/Mars%20Perseverance%20Communications%202021%20revised.pdf |
-| NASA/JPL · Mars 2020 Landing Press Kit · Telecommunications | https://www.jpl.nasa.gov/news/press_kits/mars_2020/landing/mission/spacecraft/telecommunications |
-| NASA/JPL · Perseverance Mars Rover Gets Its Wheels and Air Brakes | https://www.jpl.nasa.gov/news/nasas-perseverance-mars-rover-gets-its-wheels-and-air-brakes/ |
-| NASA/JPL · Oxygen-Generating Experiment MOXIE Completes Mars Mission | https://www.jpl.nasa.gov/news/nasas-oxygen-generating-experiment-moxie-completes-mars-mission/ |
-| NASA · Record-Setting Opportunity Rover Mission on Mars Comes to End | https://www.nasa.gov/press-release/nasas-record-setting-opportunity-rover-mission-on-mars-comes-to-end |
-| NASA · Mars 2020 mission blog (landing day) | https://blogs.nasa.gov/mars2020/author/nhartono |
+## NASA/JPL references
 
-Todos son documentación científica y de misión. El juego **no** integra datasets (PDS, MRO, Curiosity, InSight) ni imágenes de la NASA; no los cites como datos usados.
+The central inventory is [NASA_RESOURCES_USED.md](../../../research/NASA_RESOURCES_USED.md). V5-specific mission-planning references are listed in [PLANNING_SOURCES_V5.md](research/PLANNING_SOURCES_V5.md). The [science traceability matrix](SCIENCE_TRACEABILITY.md) links selected topics to gameplay.
 
-## 3. Space Agency Partner data
+NASA resources are cited as documentation and scientific context. Do not describe them as live API integrations or directly loaded datasets.
 
-Ninguno. No se usó ningún recurso de una agencia asociada.
+## Super Intelligence / AI disclosure
 
-## 4. Estado de la contribución científica
+The team used AI-assisted tools in parts of the visual and software workflow. ChatGPT generated the 2Mars and SpaceNuts logos; Claude generated game visual assets using team-prepared Canva references and assisted with code; OpenAI Codex assisted with code and debugging; Higgsfield was used for launch and rover animation work; Microsoft Copilot assisted with spreadsheet consolidation. Team members directed, selected, reviewed and integrated the results.
 
-Implementado: objetivos → zonas; instrumentos → compatibilidad y evidencia; enlace UHF y directo → pasos de orbitador, memoria y transmisión; energía solar o RTG; muestra fallida; ruedas y terreno; aterrizaje autónomo; catálogo de muestras con contexto.
-Parcial: el aterrizaje y las tasas de enlace son modelos simplificados, declarados en la Biblioteca.
-Previsto: terreno o mapas a partir de datos reales (Mars Trek, HiRISE); imágenes reales dentro del juego.
-Tabla completa: sección 5 de `RESOURCE_AUDIT.md`.
+Use this as a factual reference when completing the official SI disclosure. Follow the event's current requirements for visible marks on generated images/video and descriptive acknowledgements for generated audio. This repository note is not a substitute for checking the current rules and inspecting the final media files.
 
-## 5. Use of Super Intelligence (SI) · borrador para el formulario (inglés)
+## Project description boundary
 
-> We used SI tools as follows. **Code:** the game code (GDScript, Godot 4.7), the asset scripts and the documentation were written with an AI coding assistant (Claude, Anthropic) and checked with an automated test bot that plays the real game. **3D and 2D art:** the rover, terrain, Mars globe and scenery are geometry generated by that code; part and rock pictures are renders of those models. **Audio:** music and sound effects were synthesised by a program (no samples, no AI audio model); the music files carry descriptive metadata. **Images and video:** [TEAM TO CONFIRM — the 2MARS logo, the interface icon sheet and the launch clip: state the tool used; the launch clip shows a visible “SI-generated video” watermark]. No generated content uses NASA logos, flags or mission identifiers.
-
-Sustituir el texto entre corchetes cuando el equipo confirme la procedencia (pendientes 1 a 3 de la auditoría).
-
-## 6. Tools, coding languages, hardware and software (inglés)
-
-> 2Mars was built with the Godot 4.7 engine (GL Compatibility renderer) and written in GDScript. The 3D rover, terrain, Mars globe and scenery are procedural geometry created in code. Python (NumPy, SciPy, Pillow) scripts synthesise the music and sound effects and prepare the icons, and FFmpeg converts audio to Ogg Vorbis and the launch clip to Ogg Theora. Fonts are Fredoka and Nunito (SIL Open Font License). An AI coding assistant (Claude, Anthropic) wrote and reviewed code with us, and an automated bot plays full missions in English and Spanish as a regression test. The game runs on a standard Windows, macOS or Linux PC with keyboard and mouse; no special hardware is required.
-
-Hardware del equipo: añadir el real si se quiere mencionar; aquí no consta.
-
-## 7. Explicación científica breve para jueces (inglés)
-
-> 2Mars turns Mars 2020 Perseverance mission documentation into decisions with consequences. NASA's four science objectives become four campaign zones. The seven real instruments keep their real roles: PIXL and SHERLOC need the arm, and each instrument only returns its own kind of evidence. Communications follow NASA's description of the rover's links: a fast UHF relay that works only while an orbiter is overhead, and a slow direct X-band link, so science counts only once Earth receives it. Power is generation versus consumption in watts and watt-hours, with nights, dust and safe mode. Real events shape the game: the empty first sample tube at Roubion, the wheel redesign after Curiosity, and the signal delay that forces the rover to land itself. Game numbers (kilograms, credits, megabytes, rates and times) are a simplified educational model and are labelled as such next to the real figures. The game distinguishes habitability and possible biosignatures from confirmed evidence: NASA has not confirmed life on Mars.
+2Mars is an educational Mars rover mission design and exploration game. It is not a professional engineering tool, high-fidelity orbital simulator or NASA-affiliated product. Its mission and rover parameters include simplified game models.

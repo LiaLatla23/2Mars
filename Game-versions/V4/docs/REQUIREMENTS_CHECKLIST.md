@@ -1,8 +1,10 @@
-# Lista de requisitos → implementación → evidencia
+# Registro de requisitos e implementación · historial V3 y estado V4
+
+> **Cómo leer este documento:** las secciones históricas conservan el registro de requisitos y estados de V3; no representan el estado actual de V4. Para el estado V4, consulta exclusivamente la sección «Encargo V4» al final. La etiqueta «V3» que aparece en las notas siguientes es histórica y se conserva para trazabilidad.
 
 > **V4 (15-11-2026).** La tabla del encargo de V4 está al final de este documento («Encargo V4»). Las tablas de V3 se conservan como registro: donde V3 decía «Pendiente» o «Parcial» por 3D, mejoras, base en Marte, iconos, ruedas animadas o vídeo, vale lo que diga la tabla de V4.
 
-2Mars V3 · Equipo SpaceNuts · Desarrollado en distintas sesiones durante el 14 y 15 de noviembre.
+**Registro histórico V3:** Equipo SpaceNuts · desarrollado en distintas sesiones durante el 14 y 15 de noviembre.
 
 Estado: **Hecho** = implementado y comprobado por el bot de pruebas o por captura revisada · **Parcial** = funciona, con el alcance que se indica · **Pendiente** = no implementado.
 "Bot" se refiere a `tests/bot.gd` (188 comprobaciones, en inglés y en español, con Godot 4.7 estable en modo headless a 60 fps fijos).

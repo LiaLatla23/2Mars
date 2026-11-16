@@ -1,128 +1,127 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/brand/logo_2mars.png" alt="2Mars logo" width="230">
-</p>
-
+<!-- 2Mars | Team SpaceNuts | NASA Space Apps Challenge 2026 -->
+<p align="center"><img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/brand/logo_2mars.png" alt="2Mars logo" width="230"></p>
 <h1 align="center">2Mars</h1>
 <p align="center"><strong>Every decision shapes the mission.</strong></p>
+<p align="center">An educational Mars rover mission design and exploration game by Team SpaceNuts · Panama</p>
 <p align="center">
-  An educational Mars mission design and management game by Team SpaceNuts.
-  <br>
-  Built for the <strong>NASA Space Apps Challenge 2026</strong>.
-</p>
-
-<p align="center">
-  <a href="https://2mars.vercel.app"><img src="https://img.shields.io/badge/PLAY-2mars.vercel.app-c65b3d?style=for-the-badge" alt="Play 2Mars"></a>
-  <a href="https://github.com/Savamg/2Mars"><img src="https://img.shields.io/badge/GitHub-Source%20Code-24292f?style=for-the-badge&logo=github" alt="Source code"></a>
-  <a href="https://godotengine.org"><img src="https://img.shields.io/badge/Engine-Godot%204.7-478cbf?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot 4.7"></a>
-  <img src="https://img.shields.io/badge/Language-English%20%7C%20Espa%C3%B1ol-6b8e75?style=for-the-badge" alt="Bilingual">
+<a href="https://2mars.vercel.app/"><img src="https://img.shields.io/badge/WEB%20DEMO-2mars.vercel.app-c65b3d?style=for-the-badge" alt="Web demo"></a>
+<a href="https://github.com/Savamg/2Mars"><img src="https://img.shields.io/badge/SOURCE-GitHub-24292f?style=for-the-badge&logo=github" alt="Source code"></a>
+<img src="https://img.shields.io/badge/CURRENT%20SOURCE-V5.1-478cbf?style=for-the-badge" alt="V5.1">
+<img src="https://img.shields.io/badge/GODOT-4.7-478cbf?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot 4.7">
+<img src="https://img.shields.io/badge/LANGUAGES-English%20%7C%20Espa%C3%B1ol-6b8e75?style=for-the-badge" alt="Bilingual">
 </p>
 
 ---
 
-## Your mission starts on Earth
+## Your mission starts here
 
-2Mars puts players in the role of a Mars mission team. Plan an expedition, make engineering trade-offs, configure a rover, launch it, and manage scientific operations on the Martian surface. Every choice has consequences for what the mission can achieve.
+**2Mars** turns the planning and operation of a Mars rover mission into an interactive experience. Players define scientific priorities, plan a mission, build a rover under engineering constraints, assess readiness, launch, explore the Martian surface, collect evidence and review the outcome.
 
-**[Play the web version →](https://2mars.vercel.app)**
+The rover you design is the rover you operate. Choices about mass, power, mobility, instruments, storage and communications shape what the mission can accomplish.
+
+**[Open the web demo](https://2mars.vercel.app/)** · **[Explore the V5.1 source project](Game-versions/V5/)**
+
+> **Build note:** V5.1 is the current source in this repository. The public web demo is a separate deployment and has not been independently verified as the V5.1 build; use the V5 source project above for the exact current version.
+
+## Gameplay at a glance
 
 ```mermaid
 flowchart LR
-    A["01 · PLAN: Objectives and constraints"] --> B["02 · DESIGN: Build your rover"]
-    B --> C["03 · LAUNCH: Travel to Mars"]
-    C --> D["04 · EXPLORE: Investigate and collect"]
-    D --> E["05 · LEARN: Review mission results"]
-    classDef stage fill:#26384b,stroke:#d77c58,color:#ffffff,stroke-width:2px
-    class A,B,C,D,E stage
+ A["01 · BRIEF<br/>Set mission goals"] --> B["02 · PLAN<br/>Choose mission parameters"]
+ B --> C["03 · DESIGN<br/>Build and assess the rover"]
+ C --> D["04 · LAUNCH<br/>Travel to Mars"]
+ D --> E["05 · EXPLORE<br/>Operate, investigate and collect"]
+ E --> F["06 · DEBRIEF<br/>Review results and learn"]
 ```
 
-## A look inside the rover workshop
+## Screenshots
 
-These are original in-game component assets from V4:
+These captures show the V5 game interface and actual gameplay systems.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/rocker.png" alt="Rover rocker-bogie suspension component" width="120">
-  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/drill.png" alt="Rover sampling drill component" width="120">
-  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/solar.png" alt="Rover solar power component" width="120">
-  <img src="https://raw.githubusercontent.com/Savamg/2Mars/main/Game-versions/V4/assets/parts/supercam.png" alt="SuperCam science instrument component" width="120">
+<img src="screenshots/Captura_de_pantalla_2026-11-15_220124.width-1024.png" alt="V5 Mars surface operation with rover, Dr. Owen tutorial and science interaction panel" width="48%">
+<img src="screenshots/Captura_de_pantalla_2026-11-15_220328_Gu4pGw8.width-1024.png" alt="V5 mission panel with Mars globe and Jezero Crater exploration zones" width="48%">
 </p>
+<p align="center">
+<img src="screenshots/Captura_de_pantalla_2026-11-15_220555.width-1024.png" alt="V5 local multiplayer mode selection" width="48%">
+<img src="screenshots/Captura_de_pantalla_2026-11-15_220718.width-1024.png" alt="V5 Science Library showing Perseverance instruments and game-model values" width="48%">
+</p>
+<p align="center"><img src="screenshots/Captura_de_pantalla_2026-11-15_221124.width-1024.png" alt="V5 Science Library mission stories with NASA source attribution" width="70%"></p>
 
-## Explore 2Mars
+## What players can do
 
-| Mission planning | Rover engineering | Mars operations |
-|---|---|---|
-| Set priorities, select a launch window, destination and mission profile. | Balance mass, budget, power, mobility and scientific capability across a rover build. | Explore Jezero Crater, investigate targets, collect samples, manage data and transmit results. |
+- **Plan a mission:** choose objectives, a mission profile, launch scenario, landing area and science priorities.
+- **Engineer a rover:** select from a 30-component catalogue across seven categories and balance mass, budget, power, mobility, data storage and scientific capability.
+- **Evaluate readiness:** identify blockers, risks, limitations and recommendations before launch.
+- **Travel to Mars:** experience launch, cruise, landing and mission events through an educational game model.
+- **Explore and investigate:** navigate Martian terrain, photograph and analyse targets, collect samples, manage energy and data, and transmit findings.
+- **Learn from evidence:** consult the Science Library, real mission stories, glossary and NASA-to-game explanations.
+- **Play in English or Spanish:** language and input preferences are available in the game.
+- **Play solo or locally with others:** includes single-player and local cooperative options; no online multiplayer is claimed.
 
-- **Two ways to play:** Campaign and Sandbox.
-- **Cooperative play:** local two-player mode with complementary mission roles.
-- **Bilingual experience:** English and Spanish.
-- **Science Library:** NASA/JPL references, real mission examples, and clear distinctions between facts and game abstractions.
-- **Mission scope:** four campaign exploration areas, around 30 rover component options, and seven primary science instruments.
+## Current source version
 
-## Quick start
+**CURRENT SOURCE** **V5.1.0** · Godot Engine 4.7 · GL Compatibility renderer.
 
-### Play online
+V5.1 includes an Expedition co-op mode in which two rovers share one mission through a fixed split-screen view. Each rover has individual position, speed, energy, health and sample tubes; mission time, memory, data, objectives and rewards are shared. See the [V5 player guide](Game-versions/V5/README.md) and [V5 documentation index](Game-versions/V5/docs/README.md).
 
-Open **[2mars.vercel.app](https://2mars.vercel.app)** in a modern desktop browser.
+Older versions remain available as development history; V5 is the current source of truth.
 
-### Run the project locally
+## Project evidence for reviewers
+
+The official NASA Space Apps Project Submission is the entry evaluated by the challenge. This repository complements that submission with inspectable implementation and evidence.
+
+| Evidence | What it documents |
+|---|---|
+| [Challenge alignment](evidence/CHALLENGE_ALIGNMENT.md) | How gameplay addresses the Space Mission Design Game challenge. |
+| [Educational design](evidence/EDUCATIONAL_DESIGN.md) | Concepts, player activities and intended learning opportunities. |
+| [Mission walkthrough](evidence/MISSION_CASE_STUDY.md) | A reproducible route through the complete mission flow. |
+| [Test report](evidence/TEST_REPORT.md) | V5 automated test assets, coverage and execution limits. |
+| [AI and asset attribution](evidence/AI_AND_ASSET_ATTRIBUTION.md) | Team-confirmed production tools and attribution boundaries. |
+| [V5 technical documentation](Game-versions/V5/docs/README.md) | Requirements mapping, science traceability, resource audit and references. |
+
+## Run the current source project
 
 1. Install **Godot Engine 4.7**.
 2. Clone or download this repository.
-3. In Godot, import `Game-versions/V4/project.godot`.
-4. Press **F6** to run the current scene or **F5** to run the project.
+3. Import `Game-versions/V5/project.godot` in Godot.
+4. Press **F5** to run the project.
 
-No additional plugins or external runtime dependencies are required for the V4 project.
-
-For controls, co-op roles, testing commands and the full mission walkthrough, see the **[V4 Game Guide](Game-versions/V4/README.md)**.
+No additional Godot plugins are required by the project configuration. For controls and gameplay instructions, read the [V5 game guide](Game-versions/V5/README.md).
 
 ## Repository map
 
-| Location | What belongs here |
+| Folder | Purpose |
 |---|---|
-| [`Game-versions/V4/`](Game-versions/V4/) | **Current version.** Main Godot project, assets, scripts, scenes, tests and V4 documentation. |
-| [`Game-versions/V3/`](Game-versions/V3/) | Previous playable development version, retained for project history. |
-| [`Game-versions/V1/`](Game-versions/V1/) | Early prototype and original project files. |
-| [`research/`](research/) | NASA/JPL references, mission-planning research and source inventories. |
-| [`assets/`](assets/) | Repository-level visual assets used by the documentation. |
-| [`Game-versions/V4/docs/`](Game-versions/V4/docs/) | Technical handoff, requirements, science traceability, resource audit and submission references. |
+| [`Game-versions/V5/`](Game-versions/V5/) | **Current source (V5.1.0):** Godot project, scripts, scenes, assets, tests and documentation. |
+| [`Game-versions/V4/`](Game-versions/V4/) | Previous playable version, retained for history. |
+| [`Game-versions/V3/`](Game-versions/V3/) | Earlier playable version, retained for history. |
+| [`Game-versions/V1/`](Game-versions/V1/) | Initial prototype. |
+| [`screenshots/`](screenshots/) | V5 visual evidence used above. |
+| [`evidence/`](evidence/) | Reviewer-oriented project evidence. |
+| [`research/`](research/) | NASA/JPL references and mission-planning research. |
 
-Start with the **[repository guide](Game-versions/README.md)** for version history and navigation.
+## Scientific grounding and model boundaries
 
-## Science and sources
+NASA and NASA/JPL mission documentation informs the science objectives, rover systems, instruments, samples, communications and mission stories represented in 2Mars. The in-game Science Library links selected references to gameplay.
 
-NASA and NASA/JPL documentation informs the scientific objectives, rover systems, instruments, sample investigations, mobility and communications represented in 2Mars. The in-game Science Library connects selected sources to specific gameplay decisions.
+2Mars is an educational game, not professional mission-design software. It does not calculate real orbital trajectories or Delta-V, connect to live NASA APIs, or directly load NASA planetary datasets. Several quantities and mission outcomes are simplified game parameters; fictional elements are distinguished from sourced facts. See [V5 science traceability](Game-versions/V5/docs/SCIENCE_TRACEABILITY.md) and the [resource audit](Game-versions/V5/docs/RESOURCE_AUDIT.md).
 
-- [NASA resources used in 2Mars](research/NASA_RESOURCES_USED.md)
-- [V4 science traceability](Game-versions/V4/docs/SCIENCE_TRACEABILITY.md)
-- [V4 resource and attribution audit](Game-versions/V4/docs/RESOURCE_AUDIT.md)
-- [Research index](research/README.md)
+## Tools and credits
 
-**Scientific scope:** 2Mars is an educational game, not a professional engineering tool or high-fidelity orbital simulator. NASA sources are used as research references; the game does not directly load NASA planetary datasets or reproduce a complete real-world astrodynamics model. Game parameters and fictional mission elements are distinguished from sourced facts.
+Godot Engine 4.7 and GDScript; GitHub; Vercel; Canva; Claude and OpenAI Codex for AI-assisted development; ChatGPT for the 2Mars and SpaceNuts logos; Higgsfield for launch and rover animation work; Microsoft Copilot for assistance consolidating engineering spreadsheets. See [AI and asset attribution](evidence/AI_AND_ASSET_ATTRIBUTION.md) for scope and details.
 
-## Built with
+## Team and challenge
 
-- **Godot Engine 4.7** and **GDScript** — game engine and gameplay.
-- **GitHub** — version control and documentation.
-- **Vercel** — web deployment.
-- **Canva, Claude, ChatGPT, OpenAI Codex, Microsoft Copilot and Higgsfield** — used in different parts of the team's art direction, visual generation, coding assistance, asset workflow and animation production.
+**Team SpaceNuts** · Panama  
+**NASA Space Apps Challenge 2026** · Space Mission Design Game
 
-For a more detailed account of tools and attribution, consult [V4 Resource Audit](Game-versions/V4/docs/RESOURCE_AUDIT.md) and [Submission Resources](Game-versions/V4/docs/SUBMISSION_RESOURCES.md).
-
-## Team
-
-**Team SpaceNuts** · Panama
-
-Created for the **NASA Space Apps Challenge 2026 — Space Mission Design Game**.
-
-## Contributing
-
-We welcome suggestions, bug reports and improvements to the documentation. Read the [contribution guidelines](CONTRIBUTING.md) before opening an issue or pull request.
+2Mars is an independent challenge project and is not affiliated with or endorsed by NASA.
 
 ## License
 
-This repository is distributed under the [MIT License](LICENSE), unless a third-party asset or font specifies its own license. See the V4 resource audit for attribution details.
+Distributed under the [MIT License](LICENSE), except where third-party assets or fonts carry their own licenses. See the [V5 resource audit](Game-versions/V5/docs/RESOURCE_AUDIT.md).
 
 ---
-
 <p align="center"><strong>2Mars — Every decision shapes the mission.</strong></p>
 <p align="center">Made by Team SpaceNuts · Panama</p>
